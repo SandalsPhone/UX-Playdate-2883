@@ -1,0 +1,814 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    background: #f3d557;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 101.2%;
+}
+
+.navbarcontent{
+    font-family: Inter;
+    width: 100%;
+}
+
+.navbarcontent td{
+    padding-right: 30px;
+}
+
+.shoppingcart{
+    padding-left: 200px;
+}
+
+.searchbox input{
+    display: block;
+    width: 100%;
+}
+
+.searchbox button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 47px;
+    right: 170px;
+}
+
+.navbar input[type=text]{
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 150%;
+    height: 30px;
+    font-family: Lato;
+}
+
+.usercircle{
+    padding-left: 90px;
+}
+
+.sectionone{
+    padding-top: 40px;
+}
+
+.place_options{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left_button_img{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.left_button_img:hover{
+    color: #444444;
+    opacity: 55%;
+}
+
+.right_button_img{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.right_button_img:hover{
+    color: #444444;
+    opacity: 55%;
+}
+
+.place_name{
+    font-family: Lato;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.place_rating{
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.share_icon{
+    padding-left: 1240px;
+    padding-right: 5px;
+}
+
+.heart_icon{
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.select_learning_kit{
+    font-family: Lato;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+.tick_to_select{
+    padding-left: 20px;
+}
+
+
+
+
+.lists_of_learning_kits_container{
+    width: 1440px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.grid_item_one{
+/*    background-color: rgba(255, 255, 255, 0.8); */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid_item_one_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+}
+
+.grid_item_one_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+
+.grid_item_one_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+
+.grid_item_one_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.grid_item_one_header_content{
+    font-size: 17px;
+}
+
+.grid_item_one_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -90px;
+    left: 220px;
+}
+
+.select_button{
+    background-color: transparent;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.like_button{
+    background-color: transparent;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.share_button{
+    background-color: transparent;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+
+
+
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: #2ACCEE;
+    font-family:  Inter;
+    width: 100%;
+    height: 100%;
+    margin-left: -10px;
+    width: 101.2%;
+}
+
+.footerdiv{
+    padding-top: 55px;
+    padding-left: 100px;
+}
+
+.tablefooter{
+    text-align: left;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.tablefooter td{
+    padding-right: 300px;
+}
+
+.seperatelogo{
+    line-height: 80px;
+}
+
+.footerlogos td{
+    padding-right: 35px;
+}
+
+.footerlogos{
+    margin: left;
+    padding-right: 300px;
+}
+
+.bottombar{
+    padding-left: 95px;
+    font-size: 13px;
+}
+
+.bottombar td{
+    padding-right: 25px;
+}
+
+
+
+.learningkitheader{
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    font-family: Lato;
+    font-size: 48px;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.instructor{
+    background-color: #F3D557;
+    margin-left: -10px;
+    width: 101.2%;
+    margin-top: -22px;
+}
+
+.instructorlabel{
+    font-family: Lato;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+    font-size: 48px;
+    padding-left: 45px;
+    display: block;
+    padding-top: 20px;
+}
+
+.instructortable{
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.instructortable td{
+    padding-right: 25px;
+}
+
+.whatyouget{
+    position: relative; 
+    object-fit: fill;
+    margin-left: -10px;
+    width: 101.2%;
+    height: fit-content;
+}
+
+.whatyouget_bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    margin-top: -500px;
+}
+
+.what_you_get_label{
+    position: absolute; 
+    top: 50px;
+    left: 35px;
+    font-weight: bolder;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: italic;
+    padding-left: 30px;
+}
+
+.what_you_get_tamasya{
+    background-color: #735DE7;
+    font-family: Lato;
+    border-radius: 40px;
+    position: relative;  
+    top: 200px;
+    height: 208px;
+    width: 1075px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 24px;
+}
+
+/*
+.what_you_get_tamasya{
+    display:flex;
+    justify-content: between;
+    align-items: center;
+    background-color: #735DE7;
+    font-family: Lato;
+    border-radius: 12px;
+    top: 150px;
+}
+*/
+
+.what_you_get_tamasya_header{
+    font-family: Lato;
+    font-weight: bolder;
+    color: white;
+    font-size: 46px;
+    font-style: italic;
+}
+
+.what_you_get_tamasya_x_icon{
+    padding-left: 600px;
+    padding-top: 20px;
+}
+
+.what_you_get_tamasya_3faces{
+    padding-left: 250px;
+    float: right;
+    margin-top: -45px;
+}
+
+.what_you_get_mybody{
+    background-color: #735DE7;
+    font-family: Lato;
+    border-radius: 40px;
+    position: relative;  
+    top: 220px;
+    height: 208px;
+    width: 1075px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 24px;
+}
+
+.what_you_get_mybody_header{
+    font-family: Lato;
+    font-weight: bolder;
+    color: white;
+    font-size: 46px;
+    font-style: italic;
+}
+
+.what_you_get_mybody_x_icon{
+    padding-left: 600px;
+    padding-top: 20px;
+}
+
+.what_you_get_tamasya_3faces_plus2{
+    padding-left: 20px;
+    float: right;
+    margin-top: -45px;
+}
+
+.what_you_get_book_button{
+    font-weight: bold;
+    font-family: Lato;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #ffd831;
+    color: #303030;
+    padding: 10px 70px;
+    border-color: #ffd831;
+    position: relative;
+}
+
+.what_you_get_book_button:hover{
+    background-color: #b79b23;
+    color: black;
+    border-color: #b79b23;
+    cursor: pointer;
+}
+
+.book_button_div{
+    padding-left: 650px;
+    padding-top: 120px;
+    position: relative;
+    top: 170px;
+}
+
+
+
+.pop_up_share_learningkit{
+    background-color: #FED935;
+    height: 460px;
+    width: 763px;
+    border-radius: 12px;
+}
+
+.share_learningkit_searchbar{
+    display: block;
+    width: 100%;
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+
+.share_learningkit_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Lato;
+    font-size: 36px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 190px;
+    display: block;
+}
+
+.share_learningkit_input[type=text]{
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    width: 250px;
+    height: 27px;
+    font-family: Lato;
+}
+
+.share_learningkit_magnifying_glass{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: -250px;
+    top: 3px;
+}
+
+.copy_link_learningkit{
+    padding-left: 20px;
+    position: relative;
+    left: -370px;
+    top: -10px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.share_learningkit_list_of_friends{
+    background-color: white;
+    border-radius: 12px;
+    width: 255px;
+    height: 120px;
+    overflow-y: scroll;
+    margin-left: 80px;
+}
+
+.share_learningkit_list_of_friends img{
+    padding-right: 4px;
+    position: relative;
+    top: 5px;
+    padding-left: 4px;
+}
+
+.share_to_logos{
+    display: inline-block;   
+    position: relative;
+    left: -355px;
+    padding-top: 10px;
+}
+
+.share_to_logos img{
+    width: 32px;
+    height: 32px;
+    padding-right: 5px;
+}
+
+.learningkit_friends_container{
+    display: inline-flex;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.learningkit_friends_container img{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.learningkit_friends_container label{
+    display: block;
+    text-align: center;
+}
+
+.left_arrow, .right_arrow{
+    padding-top: 10px;
+}
+
+.friends_share{
+    font-weight: bold;
+    font-family: Lato;
+    font-size: 14px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #735de7;
+    color: white;
+    padding: 7px 50px;
+    border-color: #735de7;
+    position: relative;
+    left: 540px;
+    top: 15px;
+}
+
+.friends_share:hover{
+    background-color: #5040A3;
+    border-color: #5040A3;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.pop_up_share_location{
+    background-color: #7024C4;
+    height: 460px;
+    width: 763px;
+    border-radius: 12px;
+}
+
+.share_location_searchbar{
+    display: block;
+    width: 100%;
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+
+.share_location_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Lato;
+    font-size: 36px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 190px;
+    display: block;
+}
+
+.share_location_input[type=text]{
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    width: 250px;
+    height: 27px;
+    font-family: Lato;
+}
+
+.share_location_magnifying_glass{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: -250px;
+    top: 3px;
+}
+
+.copy_link_location{
+    padding-left: 20px;
+    position: relative;
+    left: -370px;
+    top: -10px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.share_location_list_of_friends{
+    background-color: white;
+    border-radius: 12px;
+    width: 255px;
+    height: 120px;
+    overflow-y: scroll;
+    margin-left: 80px;
+}
+
+.share_location_list_of_friends img{
+    padding-right: 4px;
+    position: relative;
+    top: 5px;
+    padding-left: 4px;
+}
+
+.share_to_logos_shareloc{
+    display: inline-block;   
+    position: relative;
+    left: -355px;
+    padding-top: 10px;
+}
+
+.share_to_logos_shareloc img{
+    width: 32px;
+    height: 32px;
+    padding-right: 5px;
+}
+
+.location_friends_container{
+    display: inline-flex;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.location_friends_container img{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.location_friends_container label{
+    display: block;
+    text-align: center;
+}
+
+.left_arrow_shareloc, .right_arrow_shareloc{
+    padding-top: 10px;
+}
+
+.friends_share_shareloc{
+    font-weight: bold;
+    font-family: Lato;
+    font-size: 14px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #fed935;
+    color: black;
+    padding: 7px 50px;
+    border-color: #fed935;
+    position: relative;
+    left: 540px;
+    top: 15px;
+}
+
+.friends_share_shareloc:hover{
+    background-color: #b79b23;
+    border-color: #b79b23;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.rec_learning_kit{
+    background-color: #927dff;
+    margin-left: -10px;
+    width: 101.2%;
+    margin-top: -5px;
+}
+
+.recom_learn_kit{
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: Lato;
+    padding-left: 35%;
+}
+
+.three_items{
+    border-spacing:  40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first_container{
+    position: relative;
+   /* padding-left: 60px; */
+}
+
+.container_tamasya{
+    max-width: 290px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.learn_more_button{
+    font-family: Inter;
+    padding: 10px 50px;
+    border-radius: 12px;
+    background-color: #fed935;
+    border-color: #fed935;
+    font-weight: bold;
+}
+
+.learn_more_button:hover{
+    background-color: #b79b23;
+    border-color: #b79b23;
+}
+
+.second_container{
+    position: relative;
+    padding-left: 90px; 
+    padding-right: 90px;
+}
+
+.container_tamasya_dua{
+    max-width: 350px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.learn_more_button_dua{
+    font-family: Inter;
+    padding: 10px 50px;
+    border-radius: 12px;
+    background-color: #fed935;
+    border-color: #fed935;
+    font-weight: bold;
+}
+
+.learn_more_button_dua:hover{
+    background-color: #b79b23;
+    border-color: #b79b23;
+}
+
+.third_container{
+    position: relative;
+ /*   padding-left: 60px; */
+}
+
+.container_tamasya_tiga{
+    max-width: 290px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.learn_more_button_tiga{
+    font-family: Inter;
+    padding: 10px 50px;
+    border-radius: 12px;
+    background-color: #fed935;
+    border-color: #fed935;
+    font-weight: bold;
+}
+
+.learn_more_button_tiga:hover{
+    background-color: #b79b23;
+    border-color: #b79b23;
+}
