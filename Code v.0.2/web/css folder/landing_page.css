@@ -16,9 +16,13 @@ body{
     background-color: white;
     text-align: center;
     border-radius: 20px;
-    width: 200%;
-    height: 25px;
+    width: 150%;
+    height: 30px;
     font-family: Lato;
+}
+
+.search_box{
+    padding-left: 230px;
 }
 
 .search_box input{
@@ -32,8 +36,8 @@ body{
     cursor: pointer;
     display: inline-block;
     position: absolute;
-    top: 38px;
-    right: 185px;
+    top: 48px;
+    right: 250px;
 }
 
 .tablerow{
@@ -42,22 +46,30 @@ body{
 
 .tablerow td{
     font-family: Lato;
-    padding-right: 20px;
+    padding-right: 20px; 
 }
-
+/*
 .home_text:hover{
     color: #000000;
     opacity: 50%;
-
+}
+*/
+.cart_button{
+    padding-left: 100px;
 }
 
-.cart_button{
-    padding-left: 600px;
+.chat_icon{
+    padding-left: 10px;
 }
 
 .acc_button{
-    padding-left: 170px;
+    padding-left: 10px;
 }
+
+
+
+
+
 
 .container{
     position: relative;
@@ -290,16 +302,17 @@ body{
 .kit_options{
     background-color: #fed935;
 }
-
 .find_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family:  Lato;
     background-color:  #735de7;
     border-color:  #735de7;
     color: white;
     border-radius: 12px;
-    left: 43%;
-    margin: 0;
+    margin: auto;
     position: relative;
     padding: 10px 50px;
 }
@@ -311,7 +324,20 @@ body{
     cursor: pointer;
 }
 
+.blur_popup{
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    left: -100;
+    top: -100;
+
+}
+
 .my_body_popup{
+    backdrop-filter: blur(10px);
     background-color: #FEE472;
     position: absolute;
     z-index: 1;
@@ -389,23 +415,41 @@ body{
     font-size: 20px;
 }
 
+
+
+
 .container_day_and_night{
     max-width: 290px;
     height: 550px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .first_rect{
     position: relative;
     padding-left: 60px;
 }
-
-.container_my_body{
+.product_grid{
+    padding:10px;
+    margin: auto;
+    width:88.95%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 0px;
+    row-gap: 45px;
+    text-align: center;
+    font-family: Lato;
+}
+.grid1{
+    margin: auto;
+}
+.container_product{
     max-width: 290px;
     height: 550px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .second_rect{
@@ -418,6 +462,7 @@ body{
     height: 550px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .gambar_pekerjaan{
@@ -436,12 +481,75 @@ body{
     height: 550px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .fourth_rect{
     position: relative;
     padding-left: 10px;
 }
+
+.container_day_and_night_two{
+    max-width: 290px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fifth_rect{
+    position: relative;
+    padding-left: 60px;
+}
+
+.container_my_body_two{
+    max-width: 290px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sixth_rect{
+    position: relative;
+    padding-left: 10px;
+}
+
+.container_pekerjaan_two{
+    max-width: 290px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gambar_pekerjaan_two{
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 60px;
+}
+
+.seventh_rect{
+    position: relative;
+    padding-left: 10px;
+}
+
+.container_tamasya_two{
+    max-width: 290px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.eighth_rect{
+    position: relative;
+    padding-left: 10px;
+}
+
+
+
+
 
 .before_footer{
     position: relative;
@@ -491,46 +599,47 @@ body{
 }
 
 .highlight{
-    padding-left: 20px;
-    border-spacing: 15px;
+    display:grid;
+    grid-template-columns: repeat(4,530px);
+    position:absolute;
+    left:100px;
+    transition: 0.3s left ease-in-out;
+    height:692px;
     font-family: Inter;
-    margin-left: -10px;
-}
-
-.prev_icon{
-    padding-right: 10px;
+    column-gap: 170px;
 }
 
 .prev_icon_button{
+    position:absolute;
+    bottom:-65%;
+    left:0%;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    z-index: 1;
 }
-
 .prev_icon_button:hover{
     color: #444444;
     opacity: 55%;
 }
-
-.next_icon_button:hover{
-    color: #444444;
-    opacity: 55%;
-}
-
-.next_icon{
-    padding-left: 30px;
-}
-
 .next_icon_button{
+    position:absolute;
+    bottom:-65%;
+    right:-3%;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    z-index: 1;
+}
+.next_icon_button:hover{
+    color: #444444;
+    opacity: 55%;
 }
 
 .container_four{
@@ -649,6 +758,27 @@ body{
     padding-bottom: 15px;
     padding-right: 90px;
     padding-top: 25px;
+}
+.place1{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    max-height:100%;
+    border-radius: 63px;
+    overflow: hidden;
+}
+.purple2{
+    position: absolute;
+    bottom:0px;
+    background-color:rgba(115,93,231,0.8);
+    border-radius: 53px;
+    width: 100%;
+    color: white;
+    height: 41.466763005780344%;
+}
+.inside_purple2{
+    padding:10%;
 }
 
 .bookinimage{

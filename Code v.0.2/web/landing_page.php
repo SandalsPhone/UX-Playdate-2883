@@ -11,15 +11,13 @@
     <div class="nav">
         <table>
             <tr class="tablerow">
-                <td><img src="pic/logo.png" width="80%" height="80%"></td>
-               <td><a href="" class="home_text"> HOME </a></td> 
-                <td><a href=""> SCHEDULE </a></td>
+                <td><img src="pic/My project 1.svg"></td>
+               <td> HOME </td> 
+                <td> SCHEDULE </td>
+                <td> LEARNING KIT </td>
+                <td> FIND A FRIEND </td>
+                <td> BOOK A PLAYDATE </td>
                 <td></td>
-                <td class="cart_button">
-                    <a href="">
-                        <img src="pic/shopping-cart-01.png" width="70%" height="70%">
-                    </a>
-                </td>
                 <td>
                     <div class="search_box">
                             <input type="text" placeholder="SEARCH" class="input">
@@ -27,6 +25,14 @@
                                 <img src="pic/search-md.png" width="80%" height="80%">
                             </button>
                     </div>
+                </td>
+                <td class="cart_button">
+                    <a href="">
+                        <img src="pic/shopping-cart-01.png" width="70%" height="70%">
+                    </a>
+                </td>
+                <td class="chat_icon">
+                    <img src="pic/chat_icon.png" width="70%" height="70%">
                 </td>
                 <td class="acc_button">   
                     <a href="">
@@ -159,53 +165,95 @@
                 </td>
             </tr>
         </table>
-        <table class="four_items">
-            <tr>
-                    <td class="first_rect">
-                        <div class="container_day_and_night">
-                            <img src="pic/Rectangle 18(1).png"><br>
-                            <label class="boldedtext">Day and Night </label><br><br>
-                            AGE 6-7<br><br>
-                            <img src="pic/easy-big.png">
-                            <br><br>
-                         Price : Rp  XXX.XXX
-                         <br>
-                         </div>
-                    </td>
-                <td class="second_rect">
-                    <div class="container_my_body">
-                        <img src="pic/image 24.png"><br>
+        <div class="product_grid">
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/Rectangle 18(1).png"><br>
+                    <label class="boldedtext">Day and Night </label><br><br>
+                    AGE 6-7<br><br>
+                    <img src="pic/easy-big.png">
+                    <br><br>
+                 Price : Rp  XXX.XXX
+                 <br>
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/image 24.png"><br>
                         <label class="boldedtext"> My Body </label><br><br>
                         AGE 7-8<br><br>
                         <img src="pic/easy-small.png">
                         <br><br>
                         Price : Rp  XXX.XXX
-                    </div>
-                </td>
-                <td class="third_rect">
-                    <div class="container_pekerjaan">
-                        <img src="pic/Group 232.png" class="gambar_pekerjaan"><br>
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/Group 232.png" class="gambar_pekerjaan"><br>
                         <label class="boldedtext"> Pekerjaan </label><br><br>
                         AGE 5-6<br><br>
                         <img src="pic/medium.png">
                         <br><br>
                         Price : Rp  XXX.XXX
-                    </div>
-                </td>
-                <td class="fourth_rect">
-                    <div class="container_tamasya">
-                        <img src="pic/Screenshot (389) 1.png"><br>
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/Screenshot (389) 1.png"><br>
                         <label class="boldedtext"> Tamasya </label><br><br>
                         AGE 4-5<br><br>
                         <img src="pic/hard.png">
                         <br><br>
                         Price : Rp  XXX.XXX
-                    </div>
-                </td>
-                </tr>
-        </table>
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/Rectangle 18(1).png"><br>
+                    <label class="boldedtext">Day and Night </label><br><br>
+                    AGE 6-7<br><br>
+                    <img src="pic/easy-big.png">
+                    <br><br>
+                 Price : Rp  XXX.XXX
+                 <br>
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/image 24.png"><br>
+                        <label class="boldedtext"> My Body </label><br><br>
+                        AGE 7-8<br><br>
+                        <img src="pic/easy-small.png">
+                        <br><br>
+                        Price : Rp  XXX.XXX
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/Group 232.png" class="gambar_pekerjaan"><br>
+                        <label class="boldedtext"> Pekerjaan </label><br><br>
+                        AGE 5-6<br><br>
+                        <img src="pic/medium.png">
+                        <br><br>
+                        Price : Rp  XXX.XXX
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="pic/Screenshot (389) 1.png"><br>
+                        <label class="boldedtext"> Tamasya </label><br><br>
+                        AGE 4-5<br><br>
+                        <img src="pic/hard.png">
+                        <br><br>
+                        Price : Rp  XXX.XXX
+                 </div>
+            </div>
+        </div>
         <button class="find_button"> FIND MORE </button>
         <br><br>
+        <div class="blur_popup">
+            <p></p>
+        </div>
         <div class="my_body_popup">
                 <table class="my_body_popup_table">
                     <tr>
@@ -285,118 +333,105 @@
             </table>
         </div>
         <br><br>
-        <table class="highlight">
-            <tr>
-                <td class="prev_icon">
-                    <button class="prev_icon_button">
-                    <img src="pic/button left.png">
-                    </button>
-                
-                <td>
-                    <div class="container_four">
-                        <img src="pic/image 18.png" width="100%" height="100%">
-                            <div class="content_container_four">
-                                <label style="font-weight: 600;" class="central_park_label">CENTRAL PARK </label>
-                                <br><br>
-                                Available Date: 23 Nov 2022, 25 Nov 2022, 27 Nov 2022
-                                <br>
-                                Area: Park, Lantai 1
-                                <br style="line-height: 30px;">
-                                Address : 
-                                <u>Letjen S. Parman St No.kav.28, South Tanjung Duren, <br>
-                                    Grogol petamburan, West Jakarta City
-                                </u>
-                                <br style="line-height: 30px;">
-                                <br>
-                                <button class="bookinimage">
-                                    BOOK
-                                </button>
-                        </div>
+        <button class="prev_icon_button">
+            <img src="pic/button left.png">
+        </button>
+        <button class="next_icon_button">
+            <img src="pic/button right.png">
+        </button>
+        <div class="highlight">
+            <div class="place1">
+                <img src="pic/image 18.png">
+                <div class="purple2">
+                    <div class="inside_purple2">
+                        <label style="font-weight: 600;" class="place_label">CENTRAL PARK </label>
+                        <br><br>
+                        Available Date: 23 Nov 2022, 25 Nov 2022, 27 Nov 2022
+                        <br>
+                        Area: Park, Lantai 1
+                        <br style="line-height: 30px;">
+                        Address : 
+                        <u>Letjen S. Parman St No.kav.28, South Tanjung Duren, <br>
+                            Grogol petamburan, West Jakarta City
+                        </u>
+                        <br style="line-height: 30px;">
+                        <br>
+                        <button class="bookinimage">
+                            BOOK
+                        </button>
                     </div>
-                </td>
-                <td>
-                    <div class="container_five">
-                    <img src="pic/image 17.png" width="100%" height="100%">
-                        <div class="content_container_five">
-                            <label style="font-weight: 600;" class="living_world_label">LIVING WORLD </label>
-                            <br><br>
-                            Available Date: 24 Nov 2022, 26 Nov 2022, 28 Nov 2022
+                </div>
+            </div>
+            <div class="place1">
+                <img src="pic/image 17.png">
+                <div class="purple2">
+                    <div class="inside_purple2">
+                        <label style="font-weight: 600;" class="place_label">LIVING WORLD </label>
+                        <br><br>
+                        Available Date: 24 Nov 2022, 26 Nov 2022, 28 Nov 2022
+                        <br>
+                        Area: Playground, Lantai 1 
+                        <br style="line-height: 30px;">
+                        Address : 
+                        <u>
+                            Jalan Alam Sutera Boulevard Kav.21 15325 
                             <br>
-                            Area: Playground, Lantai 1 
-                            <br style="line-height: 30px;">
-                            Address : 
-                            <u>
-                                Jalan Alam Sutera Boulevard Kav.21 15325 
-                                <br>
-                                Tangerang Selatan Banten
-                            </u>
-                            <br style="line-height: 30px;">
-                            <br>
-                            <button class="bookinimage">
-                                BOOK
-                            </button>
-                        </div>
+                            Tangerang Selatan Banten
+                        </u>
+                        <br style="line-height: 30px;">
+                        <br>
+                        <button class="bookinimage">
+                            BOOK
+                        </button>
                     </div>
-                </td>
-                <td class="next_icon">
-                    <button class="next_icon_button">
-                    <img src="pic/button right.png">
-                    </button>
-                </td>
-            </tr>
-             
-            
-            <tr>
-            
-                <td>
-                    <div class="container_six">
-                        <img src="pic/image 49.png"  width="336px" height="473px">
-                            <div class="content_container_six">
-                                <label style="font-weight: 600;" class="emporium_label">EMPORIUM MALL </label>
-                                <br><br>
-                                Available Date: 23 Nov 2022, 25 Nov 2022, 27 Nov 2022
-                                <br>
-                                Area: FoodHall, Lantai 4
-                                <br style="line-height: 30px;">
-                                Address : 
-                                <u>
-                                    Jl. Pluit Selatan Raya, Jakarta, Indonesia
-                                </u>
-                                <br style="line-height: 30px;">
-                                <br>
-                                <button class="bookinimage">
-                                    BOOK
-                                </button>
-                            </div>
-                        </div>
-                </td>
-                <td>
-                    <div class="container_seven">
-                        <img src="pic/image 50.png" width="336px" height="473px">
-                            <div class="content_container_seven">
-                                <label style="font-weight: 600;" class="pluit_label"> PLUIT VILLAGE </label>
-                                <br><br>
-                                Available Date: 24 Nov 2022, 26 Nov 2022, 28 Nov 2022
-                                <br>
-                                Area: Playground, Lantai 2
-                                <br style="line-height: 30px;">
-                                Address : 
-                                <u>
-                                   Jalan Pluit Selatan Raya 14440 Penjaringan <br>
-                                   Jakarta
-                                </u>
-                                <br style="line-height: 30px;">
-                                <br>
-                                <button class="bookinimage">
-                                    BOOK
-                                </button>
-                            </div>
-                        </div>
-                </td>
-            <!---
-            </tr>
-            -->
-        </table>
+                </div>
+            </div>
+            <div class="place1">
+                <img src="pic/image 49.png">
+                <div class="purple2">
+                    <div class="inside_purple2">
+                        <label style="font-weight: 600;" class="emporium_label">EMPORIUM MALL </label>
+                        <br><br>
+                        Available Date: 23 Nov 2022, 25 Nov 2022, 27 Nov 2022
+                        <br>
+                        Area: FoodHall, Lantai 4
+                        <br style="line-height: 30px;">
+                        Address : 
+                        <u>
+                            Jl. Pluit Selatan Raya, Jakarta, Indonesia
+                        </u>
+                        <br style="line-height: 30px;">
+                        <br>
+                        <button class="bookinimage">
+                            BOOK
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="place1">
+                <img src="pic/image 50.png">
+                <div class="purple2">
+                    <div class="inside_purple2">
+                        <label style="font-weight: 600;" class="pluit_label"> PLUIT VILLAGE </label>
+                        <br><br>
+                        Available Date: 24 Nov 2022, 26 Nov 2022, 28 Nov 2022
+                        <br>
+                        Area: Playground, Lantai 2
+                        <br style="line-height: 30px;">
+                        Address : 
+                        <u>
+                           Jalan Pluit Selatan Raya 14440 Penjaringan <br>
+                           Jakarta
+                        </u>
+                        <br style="line-height: 30px;">
+                        <br>
+                        <button class="bookinimage">
+                            BOOK
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     

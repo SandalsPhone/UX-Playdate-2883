@@ -514,7 +514,6 @@ USE `product_page`;
 --
 -- Table structure for table `product_page`
 --
-
 CREATE TABLE `product_page` (
   `Id_produk` int NOT NULL,
   `nama_produk` varchar(50) NOT NULL,
@@ -549,7 +548,6 @@ USE `review`;
 --
 -- Table structure for table `review`
 --
-
 CREATE TABLE `review` (
   `nama_pengguna` varchar(50) NOT NULL,
   `waktu` datetime NOT NULL,
@@ -584,7 +582,6 @@ USE `service_page`;
 --
 -- Table structure for table `service_page`
 --
-
 CREATE TABLE `service_page` (
   `id_service` int NOT NULL,
   `nama_service` varchar(50) NOT NULL,

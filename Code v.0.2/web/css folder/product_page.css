@@ -15,11 +15,15 @@ body{
 }
 
 .navbarcontent td{
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .shoppingcart{
-    padding-left: 200px;
+    padding-left: 100px;
+}
+
+.searchbox{
+    padding-left: 230px;
 }
 
 .searchbox input{
@@ -34,7 +38,7 @@ body{
     display: inline-block;
     position: absolute;
     top: 47px;
-    right: 170px;
+    right: 270px;
 }
 
 .navbar input[type=text]{
@@ -46,9 +50,15 @@ body{
     font-family: Lato;
 }
 
-.usercircle{
-    padding-left: 90px;
+.chat_icon_navbar{
+    padding-left: 10px;
 }
+
+.usercircle{
+    padding-left: 10px;
+}
+
+
 
 .sectionone{
     padding-top: 40px;
@@ -123,6 +133,44 @@ body{
     padding-left: 20px;
 }
 
+.grid_of_places_choices{
+    display: grid;
+    grid-template-columns: 250px 270px 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    width: 830px;
+    padding-left: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.grid_item_city_one{
+    background-color: rgba(255, 255, 255, 0.8);
+  /*  border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    grid-column: 1 / 3;
+  }
+
+.grid_item_city_two{
+    background-color: rgba(255, 255, 255, 0.8);
+  /*  border: 1px solid rgba(0, 0, 0, 0.8);  */
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.grid_item{
+    background-color: rgba(255, 255, 255, 0.8);
+ /*   border: 1px solid rgba(0, 0, 0, 0.8);  */
+    font-size: 17px;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
 
 
 
@@ -137,7 +185,7 @@ body{
 
 .grid_item_one{
 /*    background-color: rgba(255, 255, 255, 0.8); */
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    
     padding: 20px;
     font-size: 30px;
 }
@@ -150,6 +198,7 @@ body{
     margin-right: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
 }
 
 .grid_item_one_buttons{
@@ -178,8 +227,62 @@ body{
     position: relative;
     width: 80px;
     height: 80px;
-    top: -90px;
+    top: -150px;
     left: 220px;
+}
+
+.grid_item_one_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+
+.grid_item_one_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+
+.grid_item_one_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.grid_item_one_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+
+.grid_item_one_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_one_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
 }
 
 .select_button{
@@ -212,17 +315,1132 @@ body{
     outline: none;
 }
 
-
-
-
-
-.grid-item{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+.grid_item_two{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+    
     padding: 20px;
     font-size: 30px;
-    text-align: center;
+    }
+    
+.grid_item_two_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
 }
+    
+.grid_item_two_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+    
+.grid_item_two_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+    
+.grid_item_two_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+    
+.grid_item_two_header_content{
+        font-size: 17px;
+}
+    
+.grid_item_two_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+    
+.grid_item_two_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+    
+.grid_item_two_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+    
+.grid_item_two_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+    
+.grid_item_two_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    }
+    
+.grid_item_two_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+    }
+    
+.grid_item_two_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+
+.grid_item_three{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+    
+    padding: 20px;
+    font-size: 30px;
+}
+        
+.grid_item_three_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+        
+.grid_item_three_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+        
+.grid_item_three_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+        
+.grid_item_three_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+        
+.grid_item_three_header_content{
+    font-size: 17px;
+}
+        
+.grid_item_three_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+        
+.grid_item_three_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+        
+.grid_item_three_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+        
+.grid_item_three_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+        
+.grid_item_three_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+        
+.grid_item_three_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+        
+.grid_item_three_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_four{
+/*    background-color: rgba(255, 255, 255, 0.8); */
+    
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid_item_four_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+
+.grid_item_four_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+
+.grid_item_four_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+
+.grid_item_four_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.grid_item_four_header_content{
+    font-size: 17px;
+}
+
+.grid_item_four_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+
+.grid_item_four_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+
+.grid_item_four_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+
+.grid_item_four_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.grid_item_four_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+
+.grid_item_four_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_four_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_five{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+        
+        padding: 20px;
+        font-size: 30px;
+    }
+    
+    .grid_item_five_content{
+        background: #FDFDFD;
+        width: 329px;
+        border-radius: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Lato;
+        height: 700px;  /* buat atur tinggi div nya */
+    }
+    
+    .grid_item_five_buttons{
+        position: relative;
+        top: -360px;
+        left: 260px;
+    }
+    
+    .grid_item_five_text{
+        position: relative;
+        top: -130px;
+        left: 10px;
+    }
+    
+    .grid_item_five_header{
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 26px;
+    }
+    
+    .grid_item_five_header_content{
+        font-size: 17px;
+    }
+    
+    .grid_item_five_difficulty{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        top: -150px;
+        left: 220px;
+    }
+    
+    .grid_item_five_price{
+        position: relative;
+        font-size: 18px;
+        top: -110px;
+        left: 120px;
+    }
+    
+    .grid_item_five_days{
+        display: inline-block;
+        font-family: Lato;
+        position: relative;
+        top: -60px;
+    }
+    
+    .grid_item_five_day_one{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        font-family: Lato;
+        padding: 3px 5px;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+    
+    .grid_item_five_day_two{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        font-family: Lato;
+        padding: 3px 5px;
+        margin-right: 20px;
+    }
+    
+    .grid_item_five_day_three{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        font-family: Lato;
+        padding: 3px 5px;
+        margin-right: 20px;
+        height: 33px;
+        width: 51px;
+    }
+    
+    .grid_item_five_day_four{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        font-family: Lato;
+        padding: 3px 5px;
+        height: 33px;
+        width: 51px;
+    }
+
+.grid_item_six{
+        /*    background-color: rgba(255, 255, 255, 0.8); */
+            
+            padding: 20px;
+            font-size: 30px;
+}
+        
+.grid_item_six_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+        
+.grid_item_six_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+        
+.grid_item_six_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+        
+.grid_item_six_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+        
+.grid_item_six_header_content{
+    font-size: 17px;
+}
+        
+.grid_item_six_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+        
+.grid_item_six_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+        
+.grid_item_six_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+        
+.grid_item_six_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+        
+.grid_item_six_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+        
+.grid_item_six_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+        
+.grid_item_six_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_seven{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+        
+        padding: 20px;
+        font-size: 30px;
+}
+    
+.grid_item_seven_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+    
+.grid_item_seven_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+    
+.grid_item_seven_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+    
+.grid_item_seven_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+    
+.grid_item_seven_header_content{
+    font-size: 17px;
+}
+    
+.grid_item_seven_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+    
+.grid_item_seven_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+    
+.grid_item_seven_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+    
+.grid_item_seven_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+    
+.grid_item_seven_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+    
+.grid_item_seven_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+    
+.grid_item_seven_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_eight{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+        
+        padding: 20px;
+        font-size: 30px;
+}
+    
+.grid_item_eight_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+    
+.grid_item_eight_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+    
+.grid_item_eight_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+    
+.grid_item_eight_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+    
+.grid_item_eight_header_content{
+    font-size: 17px;
+}
+    
+.grid_item_eight_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+    
+.grid_item_eight_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+    
+.grid_item_eight_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+    
+.grid_item_eight_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+    
+.grid_item_eight_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+    
+.grid_item_eight_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+    
+.grid_item_eight_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_nine{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+        
+        padding: 20px;
+        font-size: 30px;
+}
+    
+.grid_item_nine_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+    
+.grid_item_nine_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+    
+.grid_item_nine_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+    
+.grid_item_nine_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+    
+.grid_item_nine_header_content{
+    font-size: 17px;
+}
+    
+.grid_item_nine_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+    
+.grid_item_nine_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+    
+.grid_item_nine_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+    
+.grid_item_nine_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+    
+.grid_item_nine_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+    
+.grid_item_nine_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+    
+.grid_item_nine_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_ten{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+        
+        padding: 20px;
+        font-size: 30px;
+}
+    
+.grid_item_ten_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+    
+.grid_item_ten_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+    
+.grid_item_ten_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+    
+.grid_item_ten_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+    
+.grid_item_ten_header_content{
+    font-size: 17px;
+}
+    
+.grid_item_ten_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+    
+.grid_item_ten_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+    
+.grid_item_ten_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+    
+.grid_item_ten_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+    
+.grid_item_ten_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+    
+.grid_item_ten_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+    
+.grid_item_ten_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_eleven{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+        
+        padding: 20px;
+        font-size: 30px;
+}
+    
+.grid_item_eleven_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+    
+.grid_item_eleven_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+    
+.grid_item_eleven_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+    
+.grid_item_eleven_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+    
+.grid_item_eleven_header_content{
+    font-size: 17px;
+}
+    
+.grid_item_eleven_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+    
+.grid_item_eleven_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+    
+.grid_item_eleven_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+    
+.grid_item_eleven_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+    
+.grid_item_eleven_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+    
+.grid_item_eleven_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+    
+.grid_item_eleven_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+.grid_item_twelve{
+    /*    background-color: rgba(255, 255, 255, 0.8); */
+        
+        padding: 20px;
+        font-size: 30px;
+}
+    
+.grid_item_twelve_content{
+    background: #FDFDFD;
+    width: 329px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    height: 700px;  /* buat atur tinggi div nya */
+}
+    
+.grid_item_twelve_buttons{
+    position: relative;
+    top: -360px;
+    left: 260px;
+}
+    
+.grid_item_twelve_text{
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+    
+.grid_item_twelve_header{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 26px;
+}
+    
+.grid_item_twelve_header_content{
+    font-size: 17px;
+}
+    
+.grid_item_twelve_difficulty{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+    left: 220px;
+}
+    
+.grid_item_twelve_price{
+    position: relative;
+    font-size: 18px;
+    top: -110px;
+    left: 120px;
+}
+    
+.grid_item_twelve_days{
+    display: inline-block;
+    font-family: Lato;
+    position: relative;
+    top: -60px;
+}
+    
+.grid_item_twelve_day_one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+    
+.grid_item_twelve_day_two{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+}
+    
+.grid_item_twelve_day_three{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    margin-right: 20px;
+    height: 33px;
+    width: 51px;
+}
+    
+.grid_item_twelve_day_four{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 3px 5px;
+    height: 33px;
+    width: 51px;
+}
+
+
+
+
 
 
 
