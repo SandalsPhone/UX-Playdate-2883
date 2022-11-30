@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Nov 29, 2022 at 02:44 PM
+-- Generation Time: Nov 30, 2022 at 09:31 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -33,10 +33,21 @@ CREATE TABLE `learning_kit` (
   `gambar_learning_kit` varchar(200) NOT NULL,
   `nama_learning_kit` varchar(50) NOT NULL,
   `rating_learning_kit` tinyint NOT NULL,
-  `usia_learning_kit` int NOT NULL,
+  `usia_min_learning_kit` int NOT NULL,
+  `usia_max_learning_kit` int NOT NULL,
   `difficulty_learning_kit` int NOT NULL,
   `harga_learning_kit` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `learning_kit`
+--
+
+INSERT INTO `learning_kit` (`gambar_learning_kit`, `nama_learning_kit`, `rating_learning_kit`, `usia_min_learning_kit`, `usia_max_learning_kit`, `difficulty_learning_kit`, `harga_learning_kit`) VALUES
+('pic/Rectangle 18(1).png', 'Day and Night', 0, 6, 7, 2, '0'),
+('pic/image 24.png', 'My Body', 0, 7, 8, 1, '0'),
+('pic/Group 232.png', 'Pekerjaan', 0, 5, 6, 3, '0'),
+('pic/Screenshot (389) 1.png', 'Tamasya', 0, 4, 5, 4, '0');
 --
 -- Database: `mydb`
 --
@@ -298,7 +309,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-11-29 14:40:14', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-11-30 09:31:35', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
@@ -514,6 +525,7 @@ USE `product_page`;
 --
 -- Table structure for table `product_page`
 --
+
 CREATE TABLE `product_page` (
   `Id_produk` int NOT NULL,
   `nama_produk` varchar(50) NOT NULL,
@@ -548,6 +560,7 @@ USE `review`;
 --
 -- Table structure for table `review`
 --
+
 CREATE TABLE `review` (
   `nama_pengguna` varchar(50) NOT NULL,
   `waktu` datetime NOT NULL,
@@ -582,6 +595,7 @@ USE `service_page`;
 --
 -- Table structure for table `service_page`
 --
+
 CREATE TABLE `service_page` (
   `id_service` int NOT NULL,
   `nama_service` varchar(50) NOT NULL,

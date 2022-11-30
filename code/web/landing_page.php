@@ -166,12 +166,42 @@
             </tr>
         </table>
         <div class="product_grid">
+            <?php
+                $host = 'db';
+                $user = 'root';
+                $pass = 'mypass';
+                $database = 'learning_kit';
+                 
+                $conn = mysqli_connect($host, $user, $pass, $database );
+                if (!$conn) {
+                    exit('Connection failed: '.mysqli_connect_error().PHP_EOL);
+                }
+
+                $kit = mysqli_query($conn, "SELECT * FROM `learning_kit`");
+                $grid1 = mysqli_fetch_row($kit);
+                $grid2 = mysqli_fetch_row($kit);
+                $grid3 = mysqli_fetch_row($kit);
+                $grid4 = mysqli_fetch_row($kit);
+            ?>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="pic/Rectangle 18(1).png"><br>
-                    <label class="boldedtext">Day and Night </label><br><br>
-                    AGE 6-7<br><br>
-                    <img src="pic/easy-big.png">
+                    <img src="<?=$grid1[0]?>"><br>
+                    <label class="boldedtext"> <?=$grid1[1]?> </label><br><br>
+                    AGE <?= $grid1[3] ?>-<?= $grid1[4] ?><br><br>
+                    <img src="<?php
+                        if($grid1[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid1[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid1[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
                     <br><br>
                  Price : Rp  XXX.XXX
                  <br>
@@ -179,40 +209,92 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="pic/image 24.png"><br>
-                        <label class="boldedtext"> My Body </label><br><br>
-                        AGE 7-8<br><br>
-                        <img src="pic/easy-small.png">
+                    <img src="<?=$grid2[0]?>"><br>
+                    <label class="boldedtext"> <?=$grid2[1]?> </label><br><br>
+                    AGE <?=$grid2[3]?>-<?=$grid2[4]?><br><br>
+                    <img src="<?php
+                        if($grid2[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid2[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid2[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
+                    <br><br>
+                        Price : Rp  XXX.XXX
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="<?=$grid3[0]?>" class="gambar_pekerjaan"><br>
+                        <label class="boldedtext"> <?=$grid3[1]?> </label><br><br>
+                        AGE <?=$grid3[3]?>-<?=$grid3[4]?><br><br>
+                        <img src="<?php
+                        if($grid3[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid3[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid3[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
                         <br><br>
                         Price : Rp  XXX.XXX
                  </div>
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="pic/Group 232.png" class="gambar_pekerjaan"><br>
-                        <label class="boldedtext"> Pekerjaan </label><br><br>
-                        AGE 5-6<br><br>
-                        <img src="pic/medium.png">
+                    <img src="<?=$grid4[0]?>"><br>
+                        <label class="boldedtext"> <?=$grid4[1]?> </label><br><br>
+                        AGE <?=$grid4[3]?>-<?=$grid4[4]?><br><br>
+                        <img src="<?php
+                        if($grid4[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid4[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid4[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
                         <br><br>
                         Price : Rp  XXX.XXX
                  </div>
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="pic/Screenshot (389) 1.png"><br>
-                        <label class="boldedtext"> Tamasya </label><br><br>
-                        AGE 4-5<br><br>
-                        <img src="pic/hard.png">
-                        <br><br>
-                        Price : Rp  XXX.XXX
-                 </div>
-            </div>
-            <div class="grid1">
-                <div class="container_product">
-                    <img src="pic/Rectangle 18(1).png"><br>
-                    <label class="boldedtext">Day and Night </label><br><br>
-                    AGE 6-7<br><br>
-                    <img src="pic/easy-big.png">
+                <img src="<?=$grid1[0]?>"><br>
+                    <label class="boldedtext"> <?=$grid1[1]?> </label><br><br>
+                    AGE <?= $grid1[3] ?>-<?= $grid1[4] ?><br><br>
+                    <img src="<?php
+                        if($grid1[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid1[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid1[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
                     <br><br>
                  Price : Rp  XXX.XXX
                  <br>
@@ -220,35 +302,77 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="pic/image 24.png"><br>
-                        <label class="boldedtext"> My Body </label><br><br>
-                        AGE 7-8<br><br>
-                        <img src="pic/easy-small.png">
+                    <img src="<?=$grid2[0]?>"><br>
+                    <label class="boldedtext"> <?=$grid2[1]?> </label><br><br>
+                    AGE <?=$grid2[3]?>-<?=$grid2[4]?><br><br>
+                    <img src="<?php
+                        if($grid2[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid2[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid2[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
+                    <br><br>
+                        Price : Rp  XXX.XXX
+                 </div>
+            </div>
+            <div class="grid1">
+                <div class="container_product">
+                    <img src="<?=$grid3[0]?>" class="gambar_pekerjaan"><br>
+                        <label class="boldedtext"> <?=$grid3[1]?> </label><br><br>
+                        AGE <?=$grid3[3]?>-<?=$grid3[4]?><br><br>
+                        <img src="<?php
+                        if($grid3[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid3[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid3[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
                         <br><br>
                         Price : Rp  XXX.XXX
                  </div>
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="pic/Group 232.png" class="gambar_pekerjaan"><br>
-                        <label class="boldedtext"> Pekerjaan </label><br><br>
-                        AGE 5-6<br><br>
-                        <img src="pic/medium.png">
-                        <br><br>
-                        Price : Rp  XXX.XXX
-                 </div>
-            </div>
-            <div class="grid1">
-                <div class="container_product">
-                    <img src="pic/Screenshot (389) 1.png"><br>
-                        <label class="boldedtext"> Tamasya </label><br><br>
-                        AGE 4-5<br><br>
-                        <img src="pic/hard.png">
+                <img src="<?=$grid4[0]?>"><br>
+                        <label class="boldedtext"> <?=$grid4[1]?> </label><br><br>
+                        AGE <?=$grid4[3]?>-<?=$grid4[4]?><br><br>
+                        <img src="<?php
+                        if($grid4[5] < 2){
+                            echo 'pic/easy-small.png';
+                        }
+                        else if($grid4[5] < 3){
+                            echo 'pic/easy-big.png';
+                        }
+                        else if($grid4[5] < 4){
+                            echo 'pic/medium.png';
+                        }
+                        else{
+                            echo 'pic/hard.png';
+                        }
+                        ?>">
                         <br><br>
                         Price : Rp  XXX.XXX
                  </div>
             </div>
         </div>
+        <?php
+        mysqli_close($conn);
+        ?>
         <button class="find_button"> FIND MORE </button>
         <br><br>
         <div class="blur_popup">

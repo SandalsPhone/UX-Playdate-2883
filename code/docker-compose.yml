@@ -43,6 +43,7 @@ services:
         ports:
             - ${IP}:3300:3306
         command: "mysqld --init-file /data/application/init.sql"
+        
         volumes:
             - ./data/init.sql:/data/application/init.sql
             - db_data:/var/lib/mysql
