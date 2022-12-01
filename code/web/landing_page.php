@@ -172,7 +172,7 @@
                 $pass = 'mypass';
                 $database = 'learning_kit';
                  
-                $conn = mysqli_connect($host, $user, $pass, $database );
+                $conn = mysqli_connect($host, $user, $pass, $database);
                 if (!$conn) {
                     exit('Connection failed: '.mysqli_connect_error().PHP_EOL);
                 }
@@ -184,6 +184,8 @@
                 while ($arr = mysqli_fetch_row($kit)){
                     array_push($learning_kits, $arr);
                 }
+
+                mysqli_close($conn);
             ?>
             <div class="grid1">
                 <div class="container_product">
@@ -372,9 +374,6 @@
                  </div>
             </div>
         </div>
-        <?php
-        mysqli_close($conn);
-        ?>
         <button class="find_button"> FIND MORE </button>
         <br><br>
         <div class="blur_popup">
