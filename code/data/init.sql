@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Nov 30, 2022 at 09:31 AM
+-- Generation Time: Dec 01, 2022 at 01:04 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -17,6 +17,28 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
+--
+-- Database: `book_a_playdate`
+--
+CREATE DATABASE IF NOT EXISTS `book_a_playdate` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `book_a_playdate`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `book_a_playdate`
+--
+
+CREATE TABLE `book_a_playdate` (
+  `tempat_book_playdate` varchar(50) NOT NULL,
+  `available_date_book_playdate_1` date NOT NULL,
+  `available_date_book_playdate_2` date NOT NULL,
+  `available_date_book_playdate_3` date NOT NULL,
+  `area_book_playdate` varchar(50) NOT NULL,
+  `address_book_playdate_1` varchar(100) NOT NULL,
+  `address_book_playdate_2` varchar(100) NOT NULL,
+  `address_book_playdate_3` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 --
 -- Database: `learning_kit`
 --
@@ -202,7 +224,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
+('root', '[{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
 
 -- --------------------------------------------------------
 
@@ -309,7 +331,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-11-30 09:31:35', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-12-01 12:57:45', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
