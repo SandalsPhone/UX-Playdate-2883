@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Dec 01, 2022 at 01:04 PM
+-- Generation Time: Dec 01, 2022 at 03:24 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -39,6 +39,16 @@ CREATE TABLE `book_a_playdate` (
   `address_book_playdate_2` varchar(100) NOT NULL,
   `address_book_playdate_3` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `book_a_playdate`
+--
+
+INSERT INTO `book_a_playdate` (`tempat_book_playdate`, `available_date_book_playdate_1`, `available_date_book_playdate_2`, `available_date_book_playdate_3`, `area_book_playdate`, `address_book_playdate_1`, `address_book_playdate_2`, `address_book_playdate_3`) VALUES
+('CENTRAL PARK', '2022-11-23', '2022-11-25', '2022-11-27', 'Park, Lantai 1', 'Letjen S. Parman St No.kav.28, South Tanjung Duren, Grogol petamburan, West Jakarta City', '', ''),
+('LIVING WORLD', '2022-11-24', '2022-11-26', '2022-11-28', 'Playground, Lantai 1', 'Jalan Alam Sutera Boulevard Kav.21 15325 Tangerang Selatan Banten', '', ''),
+('EMPORIUM MALL', '2022-11-23', '2022-11-25', '2022-11-27', 'FoodHall, Lantai 4', 'Jl. Pluit Selatan Raya, Jakarta, Indonesia', '', ''),
+('PLUIT VILLAGE', '2022-11-24', '2022-11-26', '2022-11-28', 'Playground, Lantai 2', 'Jalan Pluit Selatan Raya 14440 Penjaringan Jakarta', '', '');
 --
 -- Database: `learning_kit`
 --
@@ -156,6 +166,13 @@ CREATE TABLE `pma__export_templates` (
   `template_data` text CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin COMMENT='Saved export templates';
 
+--
+-- Dumping data for table `pma__export_templates`
+--
+
+INSERT INTO `pma__export_templates` (`id`, `username`, `export_type`, `template_name`, `template_data`) VALUES
+(1, 'root', 'table', 'as', '{\"quick_or_custom\":\"quick\",\"what\":\"sql\",\"allrows\":\"1\",\"aliases_new\":\"\",\"output_format\":\"sendit\",\"filename_template\":\"@TABLE@\",\"remember_template\":\"on\",\"charset\":\"utf-8\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"json_structure_or_data\":\"data\",\"json_unicode\":\"something\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"xml_structure_or_data\":\"data\",\"xml_export_events\":\"something\",\"xml_export_functions\":\"something\",\"xml_export_procedures\":\"something\",\"xml_export_tables\":\"something\",\"xml_export_triggers\":\"something\",\"xml_export_views\":\"something\",\"xml_export_contents\":\"something\",\"yaml_structure_or_data\":\"data\",\"\":null,\"lock_tables\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"json_pretty_print\":null,\"htmlword_columns\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_simple_view_export\":null,\"sql_view_current_user\":null,\"sql_or_replace_view\":null,\"sql_procedure_function\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}');
+
 -- --------------------------------------------------------
 
 --
@@ -224,7 +241,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
+('root', '[{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
 
 -- --------------------------------------------------------
 
@@ -295,6 +312,13 @@ CREATE TABLE `pma__table_uiprefs` (
   `last_update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin COMMENT='Tables'' UI preferences';
 
+--
+-- Dumping data for table `pma__table_uiprefs`
+--
+
+INSERT INTO `pma__table_uiprefs` (`username`, `db_name`, `table_name`, `prefs`, `last_update`) VALUES
+('root', 'book_a_playdate', 'book_a_playdate', '{\"CREATE_TIME\":\"2022-12-01 14:50:49\",\"col_order\":[0,1,2,3,4,5,6,7],\"col_visib\":[1,1,1,1,1,1,1,1]}', '2022-12-01 15:24:25');
+
 -- --------------------------------------------------------
 
 --
@@ -331,7 +355,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-12-01 12:57:45', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-12-01 15:22:51', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
@@ -500,7 +524,7 @@ ALTER TABLE `pma__column_info`
 -- AUTO_INCREMENT for table `pma__export_templates`
 --
 ALTER TABLE `pma__export_templates`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pma__history`
