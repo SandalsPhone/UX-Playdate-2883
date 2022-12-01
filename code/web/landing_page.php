@@ -184,11 +184,6 @@
                 while ($arr = mysqli_fetch_row($kit)){
                     array_push($learning_kits, $arr);
                 }
-
-                //$grid1 = mysqli_fetch_row($kit);
-                //$learning_kits[1] = mysqli_fetch_row($kit);
-                //$learning_kits[2] = mysqli_fetch_row($kit);
-                //$learning_kits[3] = mysqli_fetch_row($kit);
             ?>
             <div class="grid1">
                 <div class="container_product">
