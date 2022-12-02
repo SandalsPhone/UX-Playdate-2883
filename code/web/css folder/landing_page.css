@@ -3,9 +3,53 @@ body{
     overflow-x: hidden;
 }
 
+a:link{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
 .nav{
     background: #f3d557;
 }
+
+.sign_in_login_div{
+    background-color: white;
+    font-family: Lato;
+    font-weight: normal;
+    height: 100px;
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    position: absolute;
+    left: 1370px;
+    z-index: 1;
+    top: 95px;
+ /*    display: none;  */
+    display: block;
+}
+
+.toggle{
+    cursor: pointer;
+}
+
+.sign_in_login_div a{
+    text-align: center;
+    display: block;
+}
+
 /*
 .nav a:hover{
     background-color: aliceblue;
@@ -22,7 +66,7 @@ body{
 }
 
 .search_box{
-    padding-left: 230px;
+    padding-left: 150px;
 }
 
 .search_box input{
@@ -37,7 +81,7 @@ body{
     display: inline-block;
     position: absolute;
     top: 48px;
-    right: 250px;
+    right: 330px;
 }
 
 .tablerow{
@@ -66,6 +110,43 @@ body{
     padding-left: 10px;
 }
 
+.toggle{
+    cursor: pointer;
+}
+
+.sign_in_login_div{
+    background-color: white;
+    font-family: Lato;
+    font-weight: normal;
+    height: 100px;
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    position: absolute;
+    left: 1370px;
+    z-index: 1;
+    top: 95px;
+ /*    display: none;  */
+    display: block;
+}
+
+.sign_in_login_div a{
+    text-align: center;
+    display: block;
+}
+
+.sign_in_login_div_signin{
+
+}
+
+.sign_in_login_div_login{
+
+}
+
+.sign_in_login_div_logout{
+
+}
 
 
 
