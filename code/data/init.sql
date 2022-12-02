@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Dec 01, 2022 at 03:24 PM
+-- Generation Time: Dec 02, 2022 at 08:32 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -79,7 +79,12 @@ INSERT INTO `learning_kit` (`gambar_learning_kit`, `nama_learning_kit`, `rating_
 ('pic/Rectangle 18(1).png', 'Day and Night', 0, 6, 7, 2, '0'),
 ('pic/image 24.png', 'My Body', 0, 7, 8, 1, '0'),
 ('pic/Group 232.png', 'Pekerjaan', 0, 5, 6, 3, '0'),
-('pic/Screenshot (389) 1.png', 'Tamasya', 0, 4, 5, 4, '0');
+('pic/Screenshot (389) 1.png', 'Tamasya', 0, 4, 5, 4, '0'),
+('pic/image 24.png', 'dummy1', 0, 2, 3, 3, '0'),
+('pic/image 24.png', 'dummy2', 0, 3, 4, 1, '0'),
+('pic/image 24.png', 'dummy3 ', 0, 5, 7, 2, '0'),
+('pic/image 24.png', 'dummy4', 0, 5, 6, 4, '0'),
+('pic/image 24.png', 'dummy5', 0, 4, 5, 2, '0');
 --
 -- Database: `mydb`
 --
@@ -241,7 +246,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
+('root', '[{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
 
 -- --------------------------------------------------------
 
@@ -355,7 +360,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-12-01 15:22:51', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-12-02 08:28:58', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
