@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Dec 02, 2022 at 08:32 AM
+-- Generation Time: Dec 02, 2022 at 01:20 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -84,7 +84,8 @@ INSERT INTO `learning_kit` (`gambar_learning_kit`, `nama_learning_kit`, `rating_
 ('pic/image 24.png', 'dummy2', 0, 3, 4, 1, '0'),
 ('pic/image 24.png', 'dummy3 ', 0, 5, 7, 2, '0'),
 ('pic/image 24.png', 'dummy4', 0, 5, 6, 4, '0'),
-('pic/image 24.png', 'dummy5', 0, 4, 5, 2, '0');
+('pic/image 24.png', 'dummy5', 0, 4, 5, 2, '0'),
+('pic/Rectangle 18(1).png', 'dummy6', 0, 5, 6, 3, '0');
 --
 -- Database: `mydb`
 --
@@ -360,7 +361,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-12-02 08:28:58', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-12-02 13:16:02', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 

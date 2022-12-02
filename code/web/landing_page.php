@@ -181,28 +181,28 @@
 
                 $learning_kits = array();
 
-                while ($arr = mysqli_fetch_row($kit)){
+                while ($arr = mysqli_fetch_assoc($kit)){
                     array_push($learning_kits, $arr);
                 }
 
                 $learning_kits_json = json_encode($learning_kits);
-                file_put_contents("learning_kit_data.json", $learning_kits_json);
+                file_put_contents("Js Script/JSON/learning_kit_data.json", $learning_kits_json);
 
                 mysqli_close($conn);
             ?>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="<?=$learning_kits[0][0]?>"><br>
-                    <label class="boldedtext"> <?=$learning_kits[0][1]?> </label><br><br>
-                    AGE <?= $learning_kits[0][3] ?>-<?= $learning_kits[0][4] ?><br><br>
+                    <img src="<?=$learning_kits[0]['gambar_learning_kit']?>"><br>
+                    <label class="boldedtext"> <?=$learning_kits[0]['nama_learning_kit']?> </label><br><br>
+                    AGE <?= $learning_kits[0]['usia_min_learning_kit'] ?>-<?= $learning_kits[0]['usia_max_learning_kit'] ?><br><br>
                     <img src="<?php
-                        if($learning_kits[0][5] < 2){
+                        if($learning_kits[0]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[0][5] < 3){
+                        else if($learning_kits[0]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[0][5] < 4){
+                        else if($learning_kits[0]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
@@ -216,17 +216,17 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="<?=$learning_kits[1][0]?>"><br>
-                    <label class="boldedtext"> <?=$learning_kits[1][1]?> </label><br><br>
-                    AGE <?=$learning_kits[1][3]?>-<?=$learning_kits[1][4]?><br><br>
+                    <img src="<?=$learning_kits[1]['gambar_learning_kit']?>"><br>
+                    <label class="boldedtext"> <?=$learning_kits[1]['nama_learning_kit']?> </label><br><br>
+                    AGE <?=$learning_kits[1]['usia_min_learning_kit']?>-<?=$learning_kits[1]['usia_max_learning_kit']?><br><br>
                     <img src="<?php
-                        if($learning_kits[1][5] < 2){
+                        if($learning_kits[1]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[1][5] < 3){
+                        else if($learning_kits[1]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[1][5] < 4){
+                        else if($learning_kits[1]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
@@ -239,17 +239,17 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="<?=$learning_kits[2][0]?>" class="gambar_pekerjaan"><br>
-                        <label class="boldedtext"> <?=$learning_kits[2][1]?> </label><br><br>
-                        AGE <?=$learning_kits[2][3]?>-<?=$learning_kits[2][4]?><br><br>
+                    <img src="<?=$learning_kits[2]['gambar_learning_kit']?>" class="gambar_pekerjaan"><br>
+                        <label class="boldedtext"> <?=$learning_kits[2]['nama_learning_kit']?> </label><br><br>
+                        AGE <?=$learning_kits[2]['usia_min_learning_kit']?>-<?=$learning_kits[2]['usia_max_learning_kit']?><br><br>
                         <img src="<?php
-                        if($learning_kits[2][5] < 2){
+                        if($learning_kits[2]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[2][5] < 3){
+                        else if($learning_kits[2]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[2][5] < 4){
+                        else if($learning_kits[2]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
@@ -262,17 +262,17 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="<?=$learning_kits[3][0]?>"><br>
-                        <label class="boldedtext"> <?=$learning_kits[3][1]?> </label><br><br>
-                        AGE <?=$learning_kits[3][3]?>-<?=$learning_kits[3][4]?><br><br>
+                    <img src="<?=$learning_kits[3]['gambar_learning_kit']?>"><br>
+                        <label class="boldedtext"> <?=$learning_kits[3]['nama_learning_kit']?> </label><br><br>
+                        AGE <?=$learning_kits[3]['usia_min_learning_kit']?>-<?=$learning_kits[3]['usia_max_learning_kit']?><br><br>
                         <img src="<?php
-                        if($learning_kits[3][5] < 2){
+                        if($learning_kits[3]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[3][5] < 3){
+                        else if($learning_kits[3]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[3][5] < 4){
+                        else if($learning_kits[3]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
@@ -285,17 +285,17 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                <img src="<?=$learning_kits[0][0]?>"><br>
-                    <label class="boldedtext"> <?=$learning_kits[0][1]?> </label><br><br>
-                    AGE <?= $learning_kits[0][3] ?>-<?= $learning_kits[0][4] ?><br><br>
+                <img src="<?=$learning_kits[0]['gambar_learning_kit']?>"><br>
+                    <label class="boldedtext"> <?=$learning_kits[0]['nama_learning_kit']?> </label><br><br>
+                    AGE <?= $learning_kits[0]['usia_min_learning_kit'] ?>-<?= $learning_kits[0]['usia_max_learning_kit'] ?><br><br>
                     <img src="<?php
-                        if($learning_kits[0][5] < 2){
+                        if($learning_kits[0]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[0][5] < 3){
+                        else if($learning_kits[0]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[0][5] < 4){
+                        else if($learning_kits[0]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
@@ -309,17 +309,17 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="<?=$learning_kits[1][0]?>"><br>
-                    <label class="boldedtext"> <?=$learning_kits[1][1]?> </label><br><br>
-                    AGE <?=$learning_kits[1][3]?>-<?=$learning_kits[1][4]?><br><br>
+                    <img src="<?=$learning_kits[1]['gambar_learning_kit']?>"><br>
+                    <label class="boldedtext"> <?=$learning_kits[1]['nama_learning_kit']?> </label><br><br>
+                    AGE <?=$learning_kits[1]['usia_min_learning_kit']?>-<?=$learning_kits[1]['usia_max_learning_kit']?><br><br>
                     <img src="<?php
-                        if($learning_kits[1][5] < 2){
+                        if($learning_kits[1]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[1][5] < 3){
+                        else if($learning_kits[1]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[1][5] < 4){
+                        else if($learning_kits[1]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
@@ -332,17 +332,17 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                    <img src="<?=$learning_kits[2][0]?>" class="gambar_pekerjaan"><br>
-                        <label class="boldedtext"> <?=$learning_kits[2][1]?> </label><br><br>
-                        AGE <?=$learning_kits[2][3]?>-<?=$learning_kits[2][4]?><br><br>
+                    <img src="<?=$learning_kits[2]['gambar_learning_kit']?>" class="gambar_pekerjaan"><br>
+                        <label class="boldedtext"> <?=$learning_kits[2]['nama_learning_kit']?> </label><br><br>
+                        AGE <?=$learning_kits[2]['usia_min_learning_kit']?>-<?=$learning_kits[2]['usia_max_learning_kit']?><br><br>
                         <img src="<?php
-                        if($learning_kits[2][5] < 2){
+                        if($learning_kits[2]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[2][5] < 3){
+                        else if($learning_kits[2]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[2][5] < 4){
+                        else if($learning_kits[2]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
@@ -355,17 +355,17 @@
             </div>
             <div class="grid1">
                 <div class="container_product">
-                <img src="<?=$learning_kits[3][0]?>"><br>
-                        <label class="boldedtext"> <?=$learning_kits[3][1]?> </label><br><br>
-                        AGE <?=$learning_kits[3][3]?>-<?=$learning_kits[3][4]?><br><br>
+                <img src="<?=$learning_kits[3]['gambar_learning_kit']?>"><br>
+                        <label class="boldedtext"> <?=$learning_kits[3]['nama_learning_kit']?> </label><br><br>
+                        AGE <?=$learning_kits[3]['usia_min_learning_kit']?>-<?=$learning_kits[3]['usia_max_learning_kit']?><br><br>
                         <img src="<?php
-                        if($learning_kits[3][5] < 2){
+                        if($learning_kits[3]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
                         }
-                        else if($learning_kits[3][5] < 3){
+                        else if($learning_kits[3]['difficulty_learning_kit'] < 3){
                             echo 'pic/easy-big.png';
                         }
-                        else if($learning_kits[3][5] < 4){
+                        else if($learning_kits[3]['difficulty_learning_kit'] < 4){
                             echo 'pic/medium.png';
                         }
                         else{
