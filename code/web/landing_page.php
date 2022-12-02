@@ -12,11 +12,11 @@
         <table>
             <tr class="tablerow">
                 <td><img src="pic/My project 1.svg"></td>
-               <td> HOME </td> 
+                <td><a href=""> HOME </a></td> 
                 <td> SCHEDULE </td>
                 <td> LEARNING KIT </td>
                 <td> FIND A FRIEND </td>
-                <td> BOOK A PLAYDATE </td>
+                <td><a href="product_page.html"> BOOK A PLAYDATE </a></td>
                 <td></td>
                 <td>
                     <div class="search_box">
@@ -35,9 +35,9 @@
                     <img src="pic/chat_icon.png" width="70%" height="70%">
                 </td>
                 <td class="acc_button">   
-                    <a href="">
+                    <button class="toggle" id="btn">
                         <img src="pic/usercircle.png" width="70%" height="70%">
-                    </a>
+                    </button>
                 </td>
             </tr>
             <tr></tr>
@@ -45,6 +45,15 @@
             <tr></tr>
         </table>
     </div>
+
+    <div class="sign_in_login_div">
+        <a href="sign_in_page.html" class="sign_in_login_div_signin"> Sign in </a>
+        <br>
+        <a href="login_page.html" class="sign_in_login_div_login"> Login </a>
+        <br>
+        <a href="" class="sign_in_login_div_logout"> Logout</a>
+    </div>
+
     <div class="container">
         <img src="pic/Frame 88.png" width="100%" height="100%"><br>
         <div class="spaceone">
