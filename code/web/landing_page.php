@@ -185,6 +185,9 @@
                     array_push($learning_kits, $arr);
                 }
 
+                $learning_kits_json = json_encode($learning_kits);
+                file_put_contents("learning_kit_data.json", $learning_kits_json);
+
                 mysqli_close($conn);
             ?>
             <div class="grid1">
