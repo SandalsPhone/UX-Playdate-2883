@@ -35,7 +35,7 @@
                     <img src="pic/chat_icon.png" width="70%" height="70%">
                 </td>
                 <td class="acc_button">   
-                    <button class="toggle" id="btn">
+                    <button class="toggle" onclick="showingDiv()">
                         <img src="pic/usercircle.png" width="70%" height="70%">
                     </button>
                 </td>
@@ -46,7 +46,7 @@
         </table>
     </div>
 
-    <div class="sign_in_login_div">
+    <div class="sign_in_login_div" id="btn">
         <a href="sign_in_page.html" class="sign_in_login_div_signin"> Sign in </a>
         <br>
         <a href="login_page.html" class="sign_in_login_div_login"> Login </a>
