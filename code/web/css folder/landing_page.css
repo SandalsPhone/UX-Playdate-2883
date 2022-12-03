@@ -37,8 +37,7 @@ a:visited {
     left: 1370px;
     z-index: 1;
     top: 95px;
- /*    display: none;  */
-    display: block;
+    display: none;  
 }
 
 .toggle{
