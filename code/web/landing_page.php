@@ -47,7 +47,7 @@
     </div>
 
     <div class="sign_in_login_div" id="btn">
-        <a href="sign_in_page.html" class="sign_in_login_div_signin"> Sign in </a>
+        <a href="sign_up_page.html" class="sign_in_login_div_signin"> Sign Up </a>
         <br>
         <a href="login_page.html" class="sign_in_login_div_login"> Login </a>
         <br>
