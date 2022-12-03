@@ -9,4 +9,19 @@ if (!$conn) {
     exit('Connection failed: '.mysqli_connect_error().PHP_EOL);
 }
 
-?>
+$first_name = $_POST['first_name'];
+$last_name = $_POST['last_name'];
+$birth_date = $_POST['birth_date'];
+$gender = $_POST['gender'];
+$email = $_POST['email'];
+$address = $_POST['address'];
+$password = $_POST['password'];
+$password_retype = $_POST['password_retype'];
+$phone_number = $_POST['phone_number'];
+
+//check if both password and password_retype are the same
+if($password != $password_retype){
+
+}
+//validate phone number
+//on hold, current database is wrong
