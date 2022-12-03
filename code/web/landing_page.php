@@ -498,18 +498,20 @@
 
         <div class="highlight">
             <div class="place1">
-                <img src="pic/image 18.png">
+                <img src="<?= $playdates[0]['gambar_book_a_playdate'] ?>">
                 <div class="purple2">
                     <div class="inside_purple2">
-                        <label style="font-weight: 600;" class="place_label">CENTRAL PARK </label>
+                        <label style="font-weight: 600;" class="place_label"><?= $playdates[0]['tempat_book_playdate'] ?></label>
                         <br><br>
-                        Available Date: 23 Nov 2022, 25 Nov 2022, 27 Nov 2022
+                        Available Date: <?= date('d M Y', strtotime($playdates[0]['available_date_book_playdate_1']))  ?>, 
+                                        <?= date('d M Y', strtotime($playdates[0]['available_date_book_playdate_2']))  ?>,
+                                        <?= date('d M Y', strtotime($playdates[0]['available_date_book_playdate_3']))  ?>
                         <br>
-                        Area: Park, Lantai 1
+                        Area: <?= $playdates[0]['area_book_playdate'] ?>
                         <br style="line-height: 30px;">
                         Address : 
-                        <u>Letjen S. Parman St No.kav.28, South Tanjung Duren, <br>
-                            Grogol petamburan, West Jakarta City
+                        <u><?= $playdates[0]['address_book_playdate_1'] ?><br>
+                            <?= $playdates[0]['address_book_playdate_2'] ?>
                         </u>
                         <br style="line-height: 30px;">
                         <br>
@@ -520,20 +522,22 @@
                 </div>
             </div>
             <div class="place1">
-                <img src="pic/image 17.png">
+                <img src="<?= $playdates[1]['gambar_book_a_playdate'] ?>">
                 <div class="purple2">
                     <div class="inside_purple2">
-                        <label style="font-weight: 600;" class="place_label">LIVING WORLD </label>
+                        <label style="font-weight: 600;" class="place_label"><?= $playdates[1]['tempat_book_playdate'] ?></label>
                         <br><br>
-                        Available Date: 24 Nov 2022, 26 Nov 2022, 28 Nov 2022
+                        Available Date: <?= date('d M Y', strtotime($playdates[1]['available_date_book_playdate_1']))  ?>, 
+                                        <?= date('d M Y', strtotime($playdates[1]['available_date_book_playdate_2']))  ?>,
+                                        <?= date('d M Y', strtotime($playdates[1]['available_date_book_playdate_3']))  ?>
                         <br>
-                        Area: Playground, Lantai 1 
+                        Area: <?= $playdates[1]['area_book_playdate'] ?>
                         <br style="line-height: 30px;">
                         Address : 
                         <u>
-                            Jalan Alam Sutera Boulevard Kav.21 15325 
+                            <?= $playdates[1]['address_book_playdate_1'] ?> 
                             <br>
-                            Tangerang Selatan Banten
+                            <?= $playdates[1]['address_book_playdate_2'] ?>
                         </u>
                         <br style="line-height: 30px;">
                         <br>
@@ -544,18 +548,20 @@
                 </div>
             </div>
             <div class="place1">
-                <img src="pic/image 49.png">
+                <img src="<?= $playdates[2]['gambar_book_a_playdate'] ?>">
                 <div class="purple2">
                     <div class="inside_purple2">
-                        <label style="font-weight: 600;" class="emporium_label">EMPORIUM MALL </label>
+                        <label style="font-weight: 600;" class="emporium_label"><?= $playdates[2]['tempat_book_playdate'] ?></label>
                         <br><br>
-                        Available Date: 23 Nov 2022, 25 Nov 2022, 27 Nov 2022
+                        Available Date: <?= date('d M Y', strtotime($playdates[2]['available_date_book_playdate_1']))  ?>, 
+                                        <?= date('d M Y', strtotime($playdates[2]['available_date_book_playdate_2']))  ?>,
+                                        <?= date('d M Y', strtotime($playdates[2]['available_date_book_playdate_3']))  ?>
                         <br>
-                        Area: FoodHall, Lantai 4
+                        Area: <?= $playdates[2]['area_book_playdate'] ?>
                         <br style="line-height: 30px;">
                         Address : 
                         <u>
-                            Jl. Pluit Selatan Raya, Jakarta, Indonesia
+                            <?= $playdates[2]['address_book_playdate_1'] ?>
                         </u>
                         <br style="line-height: 30px;">
                         <br>
@@ -566,19 +572,21 @@
                 </div>
             </div>
             <div class="place1">
-                <img src="pic/image 50.png">
+                <img src="<?= $playdates[3]['gambar_book_a_playdate'] ?>">
                 <div class="purple2">
                     <div class="inside_purple2">
-                        <label style="font-weight: 600;" class="pluit_label"> PLUIT VILLAGE </label>
+                        <label style="font-weight: 600;" class="pluit_label"><?= $playdates[3]['tempat_book_playdate'] ?></label>
                         <br><br>
-                        Available Date: 24 Nov 2022, 26 Nov 2022, 28 Nov 2022
+                        Available Date: <?= date('d M Y', strtotime($playdates[3]['available_date_book_playdate_1']))  ?>, 
+                                        <?= date('d M Y', strtotime($playdates[3]['available_date_book_playdate_2']))  ?>,
+                                        <?= date('d M Y', strtotime($playdates[3]['available_date_book_playdate_3']))  ?>
                         <br>
-                        Area: Playground, Lantai 2
+                        Area: <?= $playdates[3]['area_book_playdate'] ?>
                         <br style="line-height: 30px;">
                         Address : 
                         <u>
-                           Jalan Pluit Selatan Raya 14440 Penjaringan <br>
-                           Jakarta
+                            <?= $playdates[3]['address_book_playdate_1'] ?> <br>
+                            <?= $playdates[3]['address_book_playdate_2'] ?>
                         </u>
                         <br style="line-height: 30px;">
                         <br>
