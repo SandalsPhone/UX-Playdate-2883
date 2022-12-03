@@ -15,19 +15,22 @@
                     <img src="pic/My project 1.svg">
                 </td>
                 <td>
-                    HOME
+                      HOME 
                 </td>
                 <td>
                     SCHEDULE
                 </td>
                 <td>
-                    LEARNING KIT
+                    <a href=""> LEARNING KIT </a>
                 </td>
                 <td>
                     FIND A FRIEND
                 </td>
                 <td>
-                    BOOK A PLAYDATE
+                    <a href=""> BOOK A PLAYDATE </a>
+                </td>
+                <td class="shoppingcart">
+                    <img src="pic/shopping-cart-01.png" width="80%" height="80%">
                 </td>
                 <td>
                     <div class="searchbox">
@@ -37,20 +40,23 @@
                         </button>
                 </div>
                 </td>
-                <td class="shoppingcart">
-                    <img src="pic/shopping-cart-01.png" width="80%" height="80%">
-                </td>
-                <td class="chat_icon_navbar">
-                    <img src="pic/chat_icon.png" width="70%" height="70%">
-                </td>
                 <td class="usercircle">
-                    <img src="pic/usercircle.png" width="80%" height="80%">
+                    <button class="toggletwo" onclick="showloginsection()">
+                        <img src="pic/usercircle.png" width="80%" height="80%">
+                    </button>
                 </td>
             </tr>
         </table>
     </div>
 
-    
+    <div class="signin_login_div" id="btntwo">
+        <a href="sign_in_page.html" class="sign_in_login_div_signin"> Sign in </a>
+        <br>
+        <a href="login_page.html" class="sign_in_login_div_login"> Login </a>
+        <br>
+        <a href="" class="sign_in_login_div_logout"> Logout</a>
+    </div>
+
         <div class="sectionone">
             <table class="place_options">
                 <tr>
@@ -62,8 +68,8 @@
                         </button>
                     </td>
 
-                    <td class="place_name">
-                        CENTRAL PARK
+                    <td class="place_name"><!--kalo segitiganya mau dipindahin atau dikecilin tambahin td atau div di dalam td class ini-->
+                        CENTRAL PARK &#9660<!--kalo mau diubah jadi button-->
                     </td>
                     <td>
                         <!---
@@ -82,53 +88,45 @@
                     </td>
                 </tr>
             </table>
-
-
-
+            <div class="background_for_grid_choice"></div>
             <div class="grid_of_places_choices">
                 <div class="grid_item_city_one">    Jakarta        </div>
                 <div class="grid_item_city_two">    Tangerang   </div>
-                <div class="grid_item">    Central Park                </div>
-                <div class="grid_item">    Emporium Mall            </div>
-                <div class="grid_item">Living World                    </div>
-                <div class="grid_item">    Plaza Indonesia          </div>
-                <div class="grid_item">    Pluit Village                </div>
-                <div class="grid_item">    AEON Mall                  </div>
-                <div class="grid_item">    Mall Taman Anggrek  </div>
-                <div class="grid_item">    Mall of Indonesia        </div>
-                <div class="grid_item">    Summarecon Mall Serpong   </div>
-                <div class="grid_item">    Gandaria City Mall         </div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">    Tangerang City Mall      </div>
-                <div class="grid_item">   Pondok Indah Mall</div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   Supermal Karawaci  </div>
-                <div class="grid_item">   Mall Kelapa Gading  </div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   Metropolis Town Square </div>
-                <div class="grid_item">   Lippo Mall</div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   Bandara City Mall  </div>
-                <div class="grid_item">   Plaza Senayan</div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   Mall Bale Kota </div>
-                <div class="grid_item">   Senayan City </div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   The Breeze BSD City</div>
-                <div class="grid_item">   Kota Kasablanka </div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   Mall Cipinang Indah </div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   </div>
-                <div class="grid_item">   Grand Indonesia</div>
-                
-    
+                <div class="grid_item_places_name">    Central Park                </div>
+                <div class="grid_item_places_name">    Emporium Mall            </div>
+                <div class="grid_item_places_name">Living World                    </div>
+                <div class="grid_item_places_name">    Plaza Indonesia          </div>
+                <div class="grid_item_places_name">    Pluit Village                </div>
+                <div class="grid_item_places_name">    AEON Mall                  </div>
+                <div class="grid_item_places_name">    Mall Taman Anggrek  </div>
+                <div class="grid_item_places_name">    Mall of Indonesia        </div>
+                <div class="grid_item_places_name">    Summarecon Mall Serpong   </div>
+                <div class="grid_item_places_name">    Gandaria City Mall         </div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">    Tangerang City Mall      </div>
+                <div class="grid_item_places_name">   Pondok Indah Mall</div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   Supermal Karawaci  </div>
+                <div class="grid_item_places_name">   Mall Kelapa Gading  </div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   Metropolis Town Square </div>
+                <div class="grid_item_places_name">   Lippo Mall</div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   Bandara City Mall  </div>
+                <div class="grid_item_places_name">   Plaza Senayan</div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   Mall Bale Kota </div>
+                <div class="grid_item_places_name">   Senayan City </div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   The Breeze BSD City</div>
+                <div class="grid_item_places_name">   Kota Kasablanka </div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   Mall Cipinang Indah </div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   </div>
+                <div class="grid_item_places_name">   Grand Indonesia</div>
             </div>
-
-
-
-
             <table>
                 <td class="share_icon">
                     <img src="pic/share-01.png">
@@ -152,605 +150,249 @@
         </div>
 
 
-        <div class="lists_of_learning_kits_container">
-            <div class="grid_item_one">
-                <div class="grid_item_one_content">
-                    <img src="pic/image 35.png">
-                    <div class="grid_item_one_buttons">
+        <div class="grid1">
+            <div class="grid_item2">
+                <div class="grid_item_content">
+                    <img src="pic/image 35.png" class="grid_img">
+                    <div class="grid_item_buttons">
                         <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
+                            <img src="pic/grid-icons/select_default.png" class="select_img" onmouseover="this.src='pic/grid-icons/select_hover.png'" onmouseout="this.src='pic/grid-icons/select_default.png'">
                         </button>
                         <br>
                         <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
+                            <img src="pic/grid-icons/like_default.png" class="like_img" onmouseover="this.src='pic/grid-icons/like_hover.png'" onmouseout="this.src='pic/grid-icons/like_default.png'">
                         </button>
                         <br>
                         <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
+                            <img src="pic/grid-icons/share_default.png" onmouseover="this.src='pic/grid-icons/share_hover.png'" onmouseout="this.src='pic/grid-icons/share_default.png'">
                         </button>
                     </div>
-                    <div class="grid_item_one_text">
-                        <label class="grid_item_one_header"> My Body </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_one_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/easy-big.png" class="grid_item_one_difficulty">
-                        <label class="grid_item_one_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_one_days">
-                            <button class="grid_item_one_day_one"> Mon </button>
-                            <button class="grid_item_one_day_two"> Wed </button>
-                            <button class="grid_item_one_day_three"> Fri </button>
-                            <button class="grid_item_one_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
+                    <div class="grid_item_text">
+                        <label class="grid_item_header"> My Body </label><br>
+                        <label class="grid_item_header_content">Learn more human body</label><br>
+                        <label class="grid_item_header_content">parts</label><br>
+                        <label class="grid_item_header_content">6-8 years old</label><br>
+                        <label class="grid_item_header_content">Session 1 (10.00-11.00)</label> <br>
+                        <label class="grid_item_header_content">5/8 attendants</label><br>
+                        <label class="grid_item_header_content">35 times booked</label><br>
+                        <img src="pic/easy-big.png" class="grid_item_difficulty">
+                        <label class="grid_item_price"> Rp. XXX.XXX </label>
+                        <div class="grid_item_days">
+                            <button class="grid_item_day_one notpurple"> Mon </button>
+                            <button class="grid_item_day_two notpurple"> Wed </button>
+                            <button class="grid_item_day_three notpurple"> Fri </button>
+                            <button class="grid_item_day_four notpurple"> Sun </button>
                         </div>
                     </div>
+                    <button class="dropdown_button">
+                      <img src="pic/down.png" class="down_img">
+                      <img src="pic/up.png" class="up_img">
+                    </button>
                 </div>
-                <br>
             </div>
-
-            <div class="grid_item_two">
-                <div class="grid_item_two_content">
-                    <img src="pic/image 37.png">
-                    <div class="grid_item_two_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
+            <div class="grid_item2">
+                <div class="grid_item_content">
+                    <img src="pic/image 37.png" class="grid_img">
+                    <div class="grid_item_buttons">
+                        <button class="select_button" >
+                            <img src="pic/grid-icons/select_default.png" class="select_img" onmouseover="this.src='pic/grid-icons/select_hover.png'" onmouseout="this.src='pic/grid-icons/select_default.png'">
                         </button>
                         <br>
                         <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
+                            <img src="pic/grid-icons/like_default.png" class="like_img" onmouseover="this.src='pic/grid-icons/like_hover.png'" onmouseout="this.src='pic/grid-icons/like_default.png'">
                         </button>
                         <br>
                         <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
+                            <img src="pic/grid-icons/share_default.png" onmouseover="this.src='pic/grid-icons/share_hover.png'" onmouseout="this.src='pic/grid-icons/share_default.png'">
                         </button>
                     </div>
-                    <div class="grid_item_two_text">
-                        <label class="grid_item_two_header"> Pekerjaan </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_two_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/easy-big.png" class="grid_item_two_difficulty">
-                        <label class="grid_item_two_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_two_days">
-                            <button class="grid_item_two_day_one"> Mon </button>
-                            <button class="grid_item_two_day_two"> Wed </button>
-                            <button class="grid_item_two_day_three"> Fri </button>
-                            <button class="grid_item_two_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
+                    <div class="grid_item_text">
+                        <label class="grid_item_header"> Pekerjaan </label><br>
+                        <label class="grid_item_header_content">Learn more human body</label><br>
+                        <label class="grid_item_header_content">parts</label><br>
+                        <label class="grid_item_header_content">6-8 years old</label><br>
+                        <label class="grid_item_header_content">Session 1 (10.00-11.00)</label> <br>
+                        <label class="grid_item_header_content">5/8 attendants</label><br>
+                        <label class="grid_item_header_content">35 times booked</label><br>
+                        <img src="pic/easy-big.png" class="grid_item_difficulty">
+                        <label class="grid_item_price"> Rp. XXX.XXX </label>
+                        <div class="grid_item_days">
+                            <button class="grid_item_day_one notpurple"> Mon </button>
+                            <button class="grid_item_day_two notpurple"> Wed </button>
+                            <button class="grid_item_day_three notpurple"> Fri </button>
+                            <button class="grid_item_day_four notpurple"> Sun </button>
                         </div>
                     </div>
+                    <button class="dropdown_button">
+                        <img src="pic/down.png" class="down_img">
+                        <img src="pic/up.png" class="up_img">
+                    </button>
                 </div>
-                <br>
-
             </div>
-
-            <div class="grid_item_three">
-                <div class="grid_item_three_content">
-                    <img src="pic/image 41.png">
-                    <div class="grid_item_three_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
+            <div class="grid_item2">
+                <div class="grid_item_content">
+                    <img src="pic/image%2041.png" class="grid_img">
+                    <div class="grid_item_buttons">
+                        <button class="select_button" >
+                            <img src="pic/grid-icons/select_default.png" class="select_img" onmouseover="this.src='pic/grid-icons/select_hover.png'" onmouseout="this.src='pic/grid-icons/select_default.png'">
                         </button>
                         <br>
                         <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
+                            <img src="pic/grid-icons/like_default.png" class="like_img" onmouseover="this.src='pic/grid-icons/like_hover.png'" onmouseout="this.src='pic/grid-icons/like_default.png'">
                         </button>
                         <br>
                         <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
+                            <img src="pic/grid-icons/share_default.png" onmouseover="this.src='pic/grid-icons/share_hover.png'" onmouseout="this.src='pic/grid-icons/share_default.png'">
                         </button>
                     </div>
-                    <div class="grid_item_three_text">
-                        <label class="grid_item_three_header"> Tamasya </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_three_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/hard.png" class="grid_item_three_difficulty">
-                        <label class="grid_item_three_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_three_days">
-                            <button class="grid_item_three_day_one"> Mon </button>
-                            <button class="grid_item_three_day_two"> Wed </button>
-                            <button class="grid_item_three_day_three"> Fri </button>
-                            <button class="grid_item_three_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
+                    <div class="grid_item_text">
+                        <label class="grid_item_header"> Tamasya </label><br>
+                        <label class="grid_item_header_content">Learn more human body</label><br>
+                        <label class="grid_item_header_content">parts</label><br>
+                        <label class="grid_item_header_content">6-8 years old</label><br>
+                        <label class="grid_item_header_content">Session 1 (10.00-11.00)</label> <br>
+                        <label class="grid_item_header_content">5/8 attendants</label><br>
+                        <label class="grid_item_header_content">35 times booked</label><br>
+                        <img src="pic/easy-big.png" class="grid_item_difficulty">
+                        <label class="grid_item_price"> Rp. XXX.XXX </label>
+                        <div class="grid_item_days">
+                            <button class="grid_item_day_one notpurple"> Mon </button>
+                            <button class="grid_item_day_two notpurple"> Wed </button>
+                            <button class="grid_item_day_three notpurple"> Fri </button>
+                            <button class="grid_item_day_four notpurple"> Sun </button>
                         </div>
                     </div>
+                    <button class="dropdown_button">
+                        <img src="pic/down.png" class="down_img">
+                        <img src="pic/up.png" class="up_img">
+                    </button>
                 </div>
-                <br>
-            </div>  
-
-            <div class="grid_item_four">
-                <div class="grid_item_four_content">
-                    <img src="pic/image 45.png">
-                    <div class="grid_item_four_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
-                        </button>
-                        <br>
-                        <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
-                        </button>
-                        <br>
-                        <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
-                        </button>
-                    </div>
-                    <div class="grid_item_four_text">
-                        <label class="grid_item_four_header"> Day and Night </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_four_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/medium.png" class="grid_item_four_difficulty">
-                        <label class="grid_item_four_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_four_days">
-                            <button class="grid_item_four_day_one"> Mon </button>
-                            <button class="grid_item_four_day_two"> Wed </button>
-                            <button class="grid_item_four_day_three"> Fri </button>
-                            <button class="grid_item_four_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
-                        </div>
-                    </div>
-                </div>
-                <br>
             </div>
-
-            <div class="grid_item_five">
-                <div class="grid_item_five_content">
-                    <img src="pic/image 46.png">
-                    <div class="grid_item_five_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
+            <div class="grid_item2">
+                <div class="grid_item_content">
+                    <img src="pic/image%2045.png" class="grid_img">
+                    <div class="grid_item_buttons">
+                        <button class="select_button" >
+                            <img src="pic/grid-icons/select_default.png" class="select_img" onmouseover="this.src='pic/grid-icons/select_hover.png'" onmouseout="this.src='pic/grid-icons/select_default.png'">
                         </button>
                         <br>
                         <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
+                            <img src="pic/grid-icons/like_default.png" class="like_img" onmouseover="this.src='pic/grid-icons/like_hover.png'" onmouseout="this.src='pic/grid-icons/like_default.png'">
                         </button>
                         <br>
                         <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
+                            <img src="pic/grid-icons/share_default.png" onmouseover="this.src='pic/grid-icons/share_hover.png'" onmouseout="this.src='pic/grid-icons/share_default.png'">
                         </button>
                     </div>
-                    <div class="grid_item_five_text">
-                        <label class="grid_item_five_header"> Spell The Words </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_five_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/easy-big.png" class="grid_item_five_difficulty">
-                        <label class="grid_item_five_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_five_days">
-                            <button class="grid_item_five_day_one"> Mon </button>
-                            <button class="grid_item_five_day_two"> Wed </button>
-                            <button class="grid_item_five_day_three"> Fri </button>
-                            <button class="grid_item_five_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
+                    <div class="grid_item_text">
+                        <label class="grid_item_header"> Day and Night </label><br>
+                        <label class="grid_item_header_content">Learn more human body</label><br>
+                        <label class="grid_item_header_content">parts</label><br>
+                        <label class="grid_item_header_content">6-8 years old</label><br>
+                        <label class="grid_item_header_content">Session 1 (10.00-11.00)</label> <br>
+                        <label class="grid_item_header_content">5/8 attendants</label><br>
+                        <label class="grid_item_header_content">35 times booked</label><br>
+                        <img src="pic/easy-big.png" class="grid_item_difficulty">
+                        <label class="grid_item_price"> Rp. XXX.XXX </label>
+                        <div class="grid_item_days">
+                            <button class="grid_item_day_one notpurple"> Mon </button>
+                            <button class="grid_item_day_two notpurple"> Wed </button>
+                            <button class="grid_item_day_three notpurple"> Fri </button>
+                            <button class="grid_item_day_four notpurple"> Sun </button>
                         </div>
                     </div>
+                    <button class="dropdown_button">
+                        <img src="pic/down.png" class="down_img">
+                        <img src="pic/up.png" class="up_img">
+                    </button>
                 </div>
-                <br>
             </div>
-            
-            <div class="grid_item_six">
-                <div class="grid_item_six_content">
-                    <img src="pic/image 47.png">
-                    <div class="grid_item_six_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
+            <div class="grid_item2">
+                <div class="grid_item_content">
+                    <img src="pic/image%2046.png" class="grid_img">
+                    <div class="grid_item_buttons">
+                        <button class="select_button" >
+                            <img src="pic/grid-icons/select_default.png" class="select_img" onmouseover="this.src='pic/grid-icons/select_hover.png'" onmouseout="this.src='pic/grid-icons/select_default.png'">
                         </button>
                         <br>
                         <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
+                            <img src="pic/grid-icons/like_default.png" class="like_img" onmouseover="this.src='pic/grid-icons/like_hover.png'" onmouseout="this.src='pic/grid-icons/like_default.png'">
                         </button>
                         <br>
                         <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
+                            <img src="pic/grid-icons/share_default.png" onmouseover="this.src='pic/grid-icons/share_hover.png'" onmouseout="this.src='pic/grid-icons/share_default.png'">
                         </button>
                     </div>
-                    <div class="grid_item_six_text">
-                        <label class="grid_item_six_header"> Tap And Slide </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_six_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/hard.png" class="grid_item_six_difficulty">
-                        <label class="grid_item_six_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_six_days">
-                            <button class="grid_item_six_day_one"> Mon </button>
-                            <button class="grid_item_six_day_two"> Wed </button>
-                            <button class="grid_item_six_day_three"> Fri </button>
-                            <button class="grid_item_six_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
+                    <div class="grid_item_text">
+                        <label class="grid_item_header"> Spell The Words </label><br>
+                        <label class="grid_item_header_content">Learn more human body</label><br>
+                        <label class="grid_item_header_content">parts</label><br>
+                        <label class="grid_item_header_content">6-8 years old</label><br>
+                        <label class="grid_item_header_content">Session 1 (10.00-11.00)</label> <br>
+                        <label class="grid_item_header_content">5/8 attendants</label><br>
+                        <label class="grid_item_header_content">35 times booked</label><br>
+                        <img src="pic/easy-big.png" class="grid_item_difficulty">
+                        <label class="grid_item_price"> Rp. XXX.XXX </label>
+                        <div class="grid_item_days">
+                            <button class="grid_item_day_one notpurple"> Mon </button>
+                            <button class="grid_item_day_two notpurple"> Wed </button>
+                            <button class="grid_item_day_three notpurple"> Fri </button>
+                            <button class="grid_item_day_four notpurple"> Sun </button>
                         </div>
                     </div>
+                    <button class="dropdown_button">
+                        <img src="pic/down.png" class="down_img">
+                        <img src="pic/up.png" class="up_img">
+                    </button>
                 </div>
-                <br>
-            </div>  
-
-            <div class="grid_item_seven">
-                <div class="grid_item_seven_content">
-                    <img src="pic/image 35.png">
-                    <div class="grid_item_seven_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
+              </div>
+              <div class="grid_item2">
+                <div class="grid_item_content">
+                    <img src="pic/image%2047.png" class="grid_img">
+                    <div class="grid_item_buttons">
+                        <button class="select_button" >
+                            <img src="pic/grid-icons/select_default.png" class="select_img" onmouseover="this.src='pic/grid-icons/select_hover.png'" onmouseout="this.src='pic/grid-icons/select_default.png'">
                         </button>
                         <br>
                         <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
+                        <img src="pic/grid-icons/like_default.png" class="like_img" onmouseover="this.src='pic/grid-icons/like_hover.png'" onmouseout="this.src='pic/grid-icons/like_default.png'">
                         </button>
                         <br>
                         <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
+                            <img src="pic/grid-icons/share_default.png" onmouseover="this.src='pic/grid-icons/share_hover.png'" onmouseout="this.src='pic/grid-icons/share_default.png'">
                         </button>
                     </div>
-                    <div class="grid_item_seven_text">
-                        <label class="grid_item_seven_header"> My Body </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_seven_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/easy-big.png" class="grid_item_seven_difficulty">
-                        <label class="grid_item_seven_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_seven_days">
-                            <button class="grid_item_seven_day_one"> Mon </button>
-                            <button class="grid_item_seven_day_two"> Wed </button>
-                            <button class="grid_item_seven_day_three"> Fri </button>
-                            <button class="grid_item_seven_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
+                    <div class="grid_item_text">
+                        <label class="grid_item_header"> Tap and Slice </label><br>
+                        <label class="grid_item_header_content">Learn more human body</label><br>
+                        <label class="grid_item_header_content">parts</label><br>
+                        <label class="grid_item_header_content">6-8 years old</label><br>
+                        <label class="grid_item_header_content">Session 1 (10.00-11.00)</label> <br>
+                        <label class="grid_item_header_content">5/8 attendants</label><br>
+                        <label class="grid_item_header_content">35 times booked</label><br>
+                        <img src="pic/easy-big.png" class="grid_item_difficulty">
+                        <label class="grid_item_price"> Rp. XXX.XXX </label>
+                        <div class="grid_item_days">
+                            <button class="grid_item_day_one notpurple"> Mon </button>
+                            <button class="grid_item_day_two notpurple"> Wed </button>
+                            <button class="grid_item_day_three notpurple"> Fri </button>
+                            <button class="grid_item_day_four notpurple"> Sun </button>
                         </div>
                     </div>
+                    <button class="dropdown_button">
+                        <img src="pic/down.png" class="down_img">
+                        <img src="pic/up.png" class="up_img">
+                    </button>
                 </div>
-                <br>
             </div>
-
-            <div class="grid_item_eight">
-                <div class="grid_item_eight_content">
-                    <img src="pic/image 37.png">
-                    <div class="grid_item_eight_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
-                        </button>
-                        <br>
-                        <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
-                        </button>
-                        <br>
-                        <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
-                        </button>
-                    </div>
-                    <div class="grid_item_eight_text">
-                        <label class="grid_item_eight_header"> Pekerjaan </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_eight_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/easy-big.png" class="grid_item_eight_difficulty">
-                        <label class="grid_item_eight_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_eight_days">
-                            <button class="grid_item_eight_day_one"> Mon </button>
-                            <button class="grid_item_eight_day_two"> Wed </button>
-                            <button class="grid_item_eight_day_three"> Fri </button>
-                            <button class="grid_item_eight_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div>
-            
-
-            <div class="grid_item_nine">
-                <div class="grid_item_nine_content">
-                    <img src="pic/image 41.png">
-                    <div class="grid_item_nine_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
-                        </button>
-                        <br>
-                        <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
-                        </button>
-                        <br>
-                        <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
-                        </button>
-                    </div>
-                    <div class="grid_item_nine_text">
-                        <label class="grid_item_nine_header"> Tamasya </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_nine_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/hard.png" class="grid_item_nine_difficulty">
-                        <label class="grid_item_nine_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_nine_days">
-                            <button class="grid_item_nine_day_one"> Mon </button>
-                            <button class="grid_item_nine_day_two"> Wed </button>
-                            <button class="grid_item_nine_day_three"> Fri </button>
-                            <button class="grid_item_nine_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div>  
-
-            <div class="grid_item_ten">
-                <div class="grid_item_ten_content">
-                    <img src="pic/image 45.png">
-                    <div class="grid_item_ten_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
-                        </button>
-                        <br>
-                        <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
-                        </button>
-                        <br>
-                        <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
-                        </button>
-                    </div>
-                    <div class="grid_item_ten_text">
-                        <label class="grid_item_ten_header"> Day And Night </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_ten_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/medium.png" class="grid_item_ten_difficulty">
-                        <label class="grid_item_ten_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_ten_days">
-                            <button class="grid_item_ten_day_one"> Mon </button>
-                            <button class="grid_item_ten_day_two"> Wed </button>
-                            <button class="grid_item_ten_day_three"> Fri </button>
-                            <button class="grid_item_ten_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div> 
-
-            <div class="grid_item_eleven">
-                <div class="grid_item_eleven_content">
-                    <img src="pic/image 46.png">
-                    <div class="grid_item_eleven_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
-                        </button>
-                        <br>
-                        <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
-                        </button>
-                        <br>
-                        <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
-                        </button>
-                    </div>
-                    <div class="grid_item_eleven_text">
-                        <label class="grid_item_eleven_header"> Spell The Words </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_eleven_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/easy-big.png" class="grid_item_eleven_difficulty">
-                        <label class="grid_item_eleven_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_eleven_days">
-                            <button class="grid_item_eleven_day_one"> Mon </button>
-                            <button class="grid_item_eleven_day_two"> Wed </button>
-                            <button class="grid_item_eleven_day_three"> Fri </button>
-                            <button class="grid_item_eleven_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div> 
-
-
-            <div class="grid_item_twelve">
-                <div class="grid_item_twelve_content">
-                    <img src="pic/image 47.png">
-                    <div class="grid_item_twelve_buttons">
-                        <button class="select_button">
-                            <img src="pic/grid-icons/select_default.png">
-                        </button>
-                        <br>
-                        <button class="like_button">
-                        <img src="pic/grid-icons/like_default.png">
-                        </button>
-                        <br>
-                        <button class="share_button">
-                            <img src="pic/grid-icons/share_default.png">
-                        </button>
-                    </div>
-                    <div class="grid_item_twelve_text">
-                        <label class="grid_item_twelve_header"> Tap And Slide </label>
-                        <br style="margin-bottom: -5px; display: block;">
-                        <label class="grid_item_twelve_header_content">
-                        Learn more human body <br style="margin-bottom: -15px; display: block;">
-                        parts
-                        <br style="margin-bottom: -15px; display: block;">
-                        6-8 years old
-                        <br style="margin-bottom: -15px; display: block;">
-                        Session 1 (10.00-11.00) 
-                        <br style="margin-bottom: -15px; display: block;">
-                        5/8 attendants
-                        <br style="margin-bottom: -15px; display: block;">
-                        35 times booked
-                        <br style="margin-bottom: -15px; display: block;">
-                        </label>
-                        <img src="pic/hard.png" class="grid_item_twelve_difficulty">
-                        <label class="grid_item_twelve_price"> Rp. XXX.XXX </label>
-                        <div class="grid_item_twelve_days">
-                            <button class="grid_item_twelve_day_one"> Mon </button>
-                            <button class="grid_item_twelve_day_two"> Wed </button>
-                            <button class="grid_item_twelve_day_three"> Fri </button>
-                            <button class="grid_item_twelve_day_four"> Sun </button>
-                        </div>
-                        <!-- DIV BUAT PANAH COLLAPSABLE --->
-                        <div>   
-
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div> 
-    
-        </div> <!-- END OF GRID CONTAINER  -->
-
-        <div> <!-- UNTUK PANAH DIPENCET COLLAPSE GITU-->
-
         </div>
-
-        
+        <br><br>
+        <div class="dropdown_grid">
+            <img src="pic/down.png" class="down_grid">
+            <img src="pic/up.png" class="up_grid">
+        </div>
+        <br>
+        <div class="blur_popup"></div>
         <div class="pop_up_share_learningkit">
             <table>
                 <tr>
