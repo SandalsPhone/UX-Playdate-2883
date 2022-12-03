@@ -1,3 +1,13 @@
+//buat popup signin segala macem
+function showingDiv(){
+    var x = document.getElementById("btn");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+
 //function untuk ganti elemen yang di clone dengan tabel learning_kit dengan index yang cocok dengan parameter index
 function change_learning_kit_card(learning_kit_array, index, learning_kit_element){
     learning_kit_element.querySelector('img').src = learning_kit_array[index]['gambar_learning_kit']
