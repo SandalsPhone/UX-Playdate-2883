@@ -203,7 +203,7 @@
                 <div class="container_product">
                     <img src="<?=$learning_kits[0]['gambar_learning_kit']?>"><br>
                     <label class="boldedtext"> <?=$learning_kits[0]['nama_learning_kit']?> </label><br><br>
-                    AGE <?= $learning_kits[0]['usia_min_learning_kit'] ?>-<?= $learning_kits[0]['usia_max_learning_kit'] ?><br><br>
+                    <label class = "age">AGE <?= $learning_kits[0]['usia_min_learning_kit'] ?>-<?= $learning_kits[0]['usia_max_learning_kit'] ?></label><br><br>
                     <img src="<?php
                         if($learning_kits[0]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -227,7 +227,7 @@
                 <div class="container_product">
                     <img src="<?=$learning_kits[1]['gambar_learning_kit']?>"><br>
                     <label class="boldedtext"> <?=$learning_kits[1]['nama_learning_kit']?> </label><br><br>
-                    AGE <?=$learning_kits[1]['usia_min_learning_kit']?>-<?=$learning_kits[1]['usia_max_learning_kit']?><br><br>
+                    <label class = "age">AGE <?=$learning_kits[1]['usia_min_learning_kit']?>-<?=$learning_kits[1]['usia_max_learning_kit']?></label><br><br>
                     <img src="<?php
                         if($learning_kits[1]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -250,7 +250,7 @@
                 <div class="container_product">
                     <img src="<?=$learning_kits[2]['gambar_learning_kit']?>" class="gambar_pekerjaan"><br>
                         <label class="boldedtext"> <?=$learning_kits[2]['nama_learning_kit']?> </label><br><br>
-                        AGE <?=$learning_kits[2]['usia_min_learning_kit']?>-<?=$learning_kits[2]['usia_max_learning_kit']?><br><br>
+                        <label class = "age">AGE <?=$learning_kits[2]['usia_min_learning_kit']?>-<?=$learning_kits[2]['usia_max_learning_kit']?></label><br><br>
                         <img src="<?php
                         if($learning_kits[2]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -273,7 +273,7 @@
                 <div class="container_product">
                     <img src="<?=$learning_kits[3]['gambar_learning_kit']?>"><br>
                         <label class="boldedtext"> <?=$learning_kits[3]['nama_learning_kit']?> </label><br><br>
-                        AGE <?=$learning_kits[3]['usia_min_learning_kit']?>-<?=$learning_kits[3]['usia_max_learning_kit']?><br><br>
+                        <label class = "age">AGE <?=$learning_kits[3]['usia_min_learning_kit']?>-<?=$learning_kits[3]['usia_max_learning_kit']?></label><br><br>
                         <img src="<?php
                         if($learning_kits[3]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -296,7 +296,7 @@
                 <div class="container_product">
                 <img src="<?=$learning_kits[0]['gambar_learning_kit']?>"><br>
                     <label class="boldedtext"> <?=$learning_kits[0]['nama_learning_kit']?> </label><br><br>
-                    AGE <?= $learning_kits[0]['usia_min_learning_kit'] ?>-<?= $learning_kits[0]['usia_max_learning_kit'] ?><br><br>
+                    <label class = "age">AGE <?= $learning_kits[0]['usia_min_learning_kit'] ?>-<?= $learning_kits[0]['usia_max_learning_kit'] ?></label><br><br>
                     <img src="<?php
                         if($learning_kits[0]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -320,7 +320,7 @@
                 <div class="container_product">
                     <img src="<?=$learning_kits[1]['gambar_learning_kit']?>"><br>
                     <label class="boldedtext"> <?=$learning_kits[1]['nama_learning_kit']?> </label><br><br>
-                    AGE <?=$learning_kits[1]['usia_min_learning_kit']?>-<?=$learning_kits[1]['usia_max_learning_kit']?><br><br>
+                    <label class = "age">AGE <?=$learning_kits[1]['usia_min_learning_kit']?>-<?=$learning_kits[1]['usia_max_learning_kit']?></label><br><br>
                     <img src="<?php
                         if($learning_kits[1]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -343,7 +343,7 @@
                 <div class="container_product">
                     <img src="<?=$learning_kits[2]['gambar_learning_kit']?>" class="gambar_pekerjaan"><br>
                         <label class="boldedtext"> <?=$learning_kits[2]['nama_learning_kit']?> </label><br><br>
-                        AGE <?=$learning_kits[2]['usia_min_learning_kit']?>-<?=$learning_kits[2]['usia_max_learning_kit']?><br><br>
+                        <label class = "age">AGE <?=$learning_kits[2]['usia_min_learning_kit']?>-<?=$learning_kits[2]['usia_max_learning_kit']?></label><br><br>
                         <img src="<?php
                         if($learning_kits[2]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -366,7 +366,7 @@
                 <div class="container_product">
                 <img src="<?=$learning_kits[3]['gambar_learning_kit']?>"><br>
                         <label class="boldedtext"> <?=$learning_kits[3]['nama_learning_kit']?> </label><br><br>
-                        AGE <?=$learning_kits[3]['usia_min_learning_kit']?>-<?=$learning_kits[3]['usia_max_learning_kit']?><br><br>
+                        <label class = "age">AGE <?=$learning_kits[3]['usia_min_learning_kit']?>-<?=$learning_kits[3]['usia_max_learning_kit']?></label><br><br>
                         <img src="<?php
                         if($learning_kits[3]['difficulty_learning_kit'] < 2){
                             echo 'pic/easy-small.png';
@@ -476,6 +476,26 @@
         <button class="next_icon_button">
             <img src="pic/button right.png">
         </button>
+        <?php
+            $host = 'db';
+            $user = 'root';
+            $pass = 'mypass';
+            $database = 'book_a_playdate';
+             
+            $conn = mysqli_connect($host, $user, $pass, $database);
+            if (!$conn) {
+                exit('Connection failed: '.mysqli_connect_error().PHP_EOL);
+            }
+
+            $kit = mysqli_query($conn, "SELECT * FROM `book_a_playdate`");
+
+            $playdates = array();
+
+            while ($arr = mysqli_fetch_assoc($kit)){
+                array_push($playdates, $arr);
+            }
+        ?>
+
         <div class="highlight">
             <div class="place1">
                 <img src="pic/image 18.png">

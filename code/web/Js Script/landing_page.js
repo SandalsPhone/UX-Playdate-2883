@@ -12,6 +12,7 @@ function showingDiv(){
 function change_learning_kit_card(learning_kit_array, index, learning_kit_element){
     learning_kit_element.querySelector('img').src = learning_kit_array[index]['gambar_learning_kit']
     learning_kit_element.querySelector('.boldedtext').innerHTML = learning_kit_array[index]['nama_learning_kit']
+    learning_kit_element.querySelector('.age').innerHTML = "Age "+learning_kit_array[index]['usia_min_learning_kit']+"-"+learning_kit_array[index]['usia_max_learning_kit']
 
     let difficulty_image = learning_kit_element.querySelectorAll('img')
 
