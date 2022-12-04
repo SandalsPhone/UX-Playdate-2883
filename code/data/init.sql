@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Dec 04, 2022 at 10:54 AM
+-- Generation Time: Dec 04, 2022 at 01:46 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -114,7 +114,9 @@ INSERT INTO `learning_kit` (`gambar_learning_kit`, `gambar_learning_kit_2`, `nam
 ('pic/Rectangle 18(1).png', '', 'Day and Night', 0, 6, 7, 2, '0', 0, 0, 0, 0),
 ('pic/image 24.png', '', 'My Body', 0, 7, 8, 1, '0', 0, 0, 0, 0),
 ('pic/Group 232.png', '', 'Pekerjaan', 0, 5, 6, 3, '0', 0, 0, 0, 0),
-('pic/Screenshot (389) 1.png', '', 'Tamasya', 0, 4, 5, 4, '0', 0, 0, 0, 0);
+('pic/Screenshot (389) 1.png', '', 'Tamasya', 0, 4, 5, 4, '0', 0, 0, 0, 0),
+('pic/Screenshot (389) 1.png', '', 'Spell The Words', 0, 6, 8, 2, '0', 0, 0, 0, 0),
+('pic/Screenshot (389) 1.png', '', 'Tap And Slice', 0, 6, 8, 0, '0', 0, 0, 0, 0);
 --
 -- Database: `mydb`
 --
@@ -269,7 +271,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"akun\",\"table\":\"akun\"},{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
+('root', '[{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"akun\",\"table\":\"akun\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
 
 -- --------------------------------------------------------
 
@@ -376,7 +378,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-12-04 10:53:28', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-12-04 13:46:06', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
