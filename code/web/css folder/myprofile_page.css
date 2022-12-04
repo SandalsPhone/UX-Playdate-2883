@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .navbar{
     background: #f3d557;
     margin-top: -10px;
@@ -11,11 +14,16 @@
 }
 
 .navbarcontent td{
-    padding-right: 30px;
+    padding-right: 20px;
+    font-family: Lato;
 }
 
 .shoppingcart{
-    padding-left: 200px;
+    padding-left: 150px;
+}
+
+.searchbox{
+    padding-left: 150px;
 }
 
 .searchbox input{
@@ -30,7 +38,11 @@
     display: inline-block;
     position: absolute;
     top: 47px;
-    right: 170px;
+    right: 290px;
+}
+
+.chat_icon{
+    padding-left: 10px;
 }
 
 .navbar input[type=text]{
@@ -43,7 +55,34 @@
 }
 
 .usercircle{
-    padding-left: 90px;
+    padding-left: 10px;
+}
+
+.sign_in_login_div{
+    background-color: white;
+    font-family: Lato;
+    font-weight: normal;
+    height: 100px;
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    position: absolute;
+    left: 1415px;
+    z-index: 1;
+    top: 95px;
+    display: none;  
+}
+
+.toggle{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sign_in_login_div a{
+    text-align: center;
+    display: block;
 }
 
 .sectionone{
@@ -53,6 +92,7 @@
 .place_options{
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
 }
 
 
@@ -65,53 +105,260 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.flipback{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 480px;
+    top: 30px;
+}
+
+.back_label_top{
+    position: relative;
+    left: 490px;
+    top: 30px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
 .main{
     display: flex;
+    height: 950px;
 }
+
 .produk{
-    width: 60%;
+    width: 240px;
+    height: 650px;
+    border-radius: 50px;
+    border: 5px solid #927DFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-left: 60px;
 }
+
+.produk div{
+    padding-bottom: 5px;
+}
+
+.produk button{
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.produk button:hover{
+    font-weight: bold;
+}
+
+.produk a{
+    padding-left: 15px;
+}
+
+.sign_out_produk{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: block;
+    color: red;
+}
+
 .profile{
-    flex-grow: 1;
+ /*   flex-grow: 1; 
     border-style: solid;
     border-width: 2px 2px;
     border-color: black;
+*/
+    width: 1000px;
+    margin-left: 90px; 
 }
+
+.My_Profile_Picture_text{
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: Lato;
+    padding-left: 5px;
+}
+
 .profile_title{
     display: flex;
+    padding-bottom: 20px;
 }
+
+.children_Picture_text{
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: Lato;
+    padding-left: 5px;
+}
+
+.My_Bio_text_children{
+    flex-grow: 1;
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 20px;
+    padding-left: 250px;
+}
+
 .My_Profile_Picture_text1{
     width: 60%;
 }
+
 .My_Bio_text{
     flex-grow: 1;
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 20px;
+    padding-left: 250px;
 }
+
 .myprofile{
     display: flex;
     border-style: solid;
-    border-width: 2px 2px;
-    border-color: black;
+    border-color: #f3d557;
+    background-color: #F3D557;
+    border-radius: 40px;
+    height: 230px;
 }
+
+.picture{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+.change_profile_myprofilepic{
+    padding-left: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Lato;
+    margin-top: -30px;
+    padding-bottom: 30px;
+}
+
 .chidren_profile{
     display: flex;
-    border-style: solid;
-    border-width: 2px 2px;
     border-color: black;
+    border-color: #f3d557;
+    background-color: #F3D557;
+    border-radius: 40px;
+    height: 400px;
 }
+
+.myprofile_right_child{
+    padding-left: 80px;
+    padding-right: 200px;
+    flex-grow: 1;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.myprofile_right_child div{
+    padding-top: 7px;
+}
+
 .myprofile_left{
-    width: 60%;
+    width: 250px;
 }
 .myprofile_right{
     flex-grow: 1;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 200px;
 }
+
+.myprofile_right div{
+    padding-top: 7px;
+}
+
+.underline_long{
+    position: relative;
+    left: 811px;
+    top: 106px;
+}
+
+.underline_long2{
+    position: relative;
+    left: 590px;
+    top: 140px;
+}
+
+.underline_long3{
+    position: relative;
+    left: 370px;
+    top: 172px;
+}
+
+.underline_long4{
+    position: relative;
+    left: 150px;
+    top: 208px;
+}
+
+.underline_long5{
+    position: relative;
+    left: -70px;
+    top: 240px;
+}
+
+.underline_long6{
+    position: relative;
+    left: -290px;
+    top: 273px;
+}
+
+.underline_long7{
+    position: relative;
+    left: 410px;
+    top: 118px;
+}
+
+.underline_long8{
+    position: relative;
+    left: 190px;
+    top: 153px;
+}
+
+.underline_long9{
+    position: relative;
+    left: -30px;
+    top: 185px;
+}
+
+.underline_long10{
+    position: relative;
+    left: -250px;
+    top: 220px;
+}
+
+.underline_long11{
+    position: relative;
+    left: 410px;
+    top: 234px;
+}
+
+.underline_long12{
+    position: relative;
+    left: 190px;
+    top: 268px;
+}
+
 .Name{
     display: flex;
+    margin-top: 7px;
 }
+
 .Name_text{
     width: 60%;
 }
 .Name_ans{
-    flex-grow: 1;
+    flex-grow: 1; 
+    margin-left: -170px;
 }
 .Age{
     display: flex;
@@ -121,6 +368,7 @@
 }
 .Age_ans{
     flex-grow: 1;
+    margin-left: -170px;
 }
 .Date_of_birth{
     display: flex;
@@ -130,6 +378,7 @@
 }
 .Date_of_birth_ans{
     flex-grow: 1;
+    margin-left: -170px;
 }
 .Email{
     display: flex;
@@ -139,6 +388,7 @@
 }
 .Email_ans{
     flex-grow: 1;
+    margin-left: -170px;
 }
 .Phone_number{
     display: flex;
@@ -148,6 +398,7 @@
 }
 .Phone_number_ans{
     flex-grow: 1;
+    margin-left: -170px;
 }
 .Address{
     display: flex;
@@ -157,15 +408,37 @@
 }
 .Address_ans{
     flex-grow: 1;
+    margin-left: -170px;
 }
 .child_desc{
     border-style: solid;
     border-width: 2px 2px;
     border-color: black;
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: white;
+    height: 100px;
+    padding-left: 15px;
+}
+
+.addchildren{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.addchildren button{
+    background: none;
+    cursor: pointer;
+    border: none;
 }
 .myfav{/*position*/
-
+    display: none;
 }
+
+
+
 
 .footer{
     background-color: #2ACCEE;
