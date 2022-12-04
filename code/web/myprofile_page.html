@@ -11,38 +11,43 @@
     <div class="navbar">
         <table>
             <tr class="navbarcontent">
-                <td> 
-                    <img src="pic/My project 1.svg">
-                </td>
-                <td>
-                    HOME
-                </td>
-                <td>
-                    LEARNING KIT
-                </td>
-                <td>
-                    FIND A FRIEND
-                </td>
-                <td>
-                    BOOK A PLAYDATE
-                </td>
-                <td class="shoppingcart">
-                    <img src="pic/shopping-cart-01.png" width="80%" height="80%">
-                </td>
+                <td><img src="pic/My project 1.svg"></td>
+                <td><a href=""> HOME </a></td> 
+                <td> SCHEDULE </td>
+                <td> LEARNING KIT </td>
+                <td> FIND A FRIEND </td>
+                <td><a href="product_page.html"> BOOK A PLAYDATE </a></td>
                 <td>
                     <div class="searchbox">
                         <input type="text" placeholder="SEARCH" class="input">
                         <button type="submit">
                             <img src="pic/search-md.png" width="80%" height="80%">
                         </button>
-                </div>
+                    </div>
+                </td>
+                <td class="shoppingcart">
+                    <img src="pic/shopping-cart-01.png" width="80%" height="80%">
+                </td>
+                <td class="chat_icon">
+                    <img src="pic/chat_icon.png" width="70%" height="70%">
                 </td>
                 <td class="usercircle">
-                    <img src="pic/usercircle.png" width="80%" height="80%">
+                    <button class="toggle" onclick="showingDiv()">
+                        <img src="pic/usercircle.png" width="80%" height="80%">
+                    </button>
                 </td>
             </tr>
         </table>
     </div>
+
+    <div class="sign_in_login_div" id="btn">
+        <a href="sign_in_page.html" class="sign_in_login_div_signin"> Sign in </a>
+        <br>
+        <a href="login_page.html" class="sign_in_login_div_login"> Login </a>
+        <br>
+        <a href="" class="sign_in_login_div_logout"> Logout</a>
+    </div>
+
     <div class="sectionone"><!--semua posisi div diubah jaadi relative jadi sesuai ama pagesize-->
         <table class="place_options">
             <tr>
@@ -50,10 +55,20 @@
                     My Profile
                 </td>
                 <td>
-                    <button>back</button><!--bisa diubah ke img-->
+                    <button class="flipback">
+                        <img src="pic/flip-backward.png" width="70%" height="70%">
+                    </button><!--bisa diubah ke img-->
+                    <br>
+                    <label class="back_label_top"> Back </label>
                 </td>
             </tr>
         </table>
+        <label class="underline_long"> ___________________________ </label>
+        <label class="underline_long2"> ___________________________ </label>
+        <label class="underline_long3"> ___________________________ </label>
+        <label class="underline_long4"> ___________________________ </label>
+        <label class="underline_long5"> ___________________________ </label>
+        <label class="underline_long6"> ___________________________ </label>
         <div class="main">
             <div class="produk">
                 <div>
@@ -75,7 +90,7 @@
                     <button>Transaction History</button>
                 </div>
                 <div>
-                    <a href="">sign out</a>
+                    <a href="" class="sign_out_produk">Sign out</a>
                 </div>
             </div>
             <div class="profile">
@@ -90,9 +105,9 @@
                 <div class="myprofile">
                     <div class="myprofile_left">
                         <div class="picture">
-                            <span>picture</span>
+                            <span><img src="pic/Ellipse 125.png" width="120px" height="120px"></span>
                         </div>
-                        <div>
+                        <div class="change_profile_myprofilepic">
                             <a href="">Change Profile</a>
                         </div>
                     </div>
@@ -147,19 +162,33 @@
                         </div>
                     </div>
                 </div>
+        <label class="underline_long7"> ___________________________ </label>
+        <label class="underline_long8"> ___________________________ </label>
+        <label class="underline_long9"> ___________________________ </label>
+        <label class="underline_long10"> ___________________________ </label>
+        <label class="underline_long11"> ___________________________ </label>
+        <label class="underline_long12"> ___________________________ </label>
+        <div class="profile_title">
+            <div class="children_Picture_text">
+                Children Picture
+            </div>
+            <div class="My_Bio_text_children">
+                My Bio
+            </div>
+        </div>
                 <div class="chidren_profile">
                     <div class="myprofile_left">
                         <div class="picture">
-                            <span>picture</span>
+                            <span><img src="pic/faces/Ellipse 121.png" width="120px" height="120px"></span>
                         </div>
-                        <div>
+                        <div class="change_profile_myprofilepic">
                             <a href="">Change Profile</a>
                         </div>
                         <div class="star_rating"><!--bisa diubah classnya biar sama ama page lain-->
-                            star 4.5 (12)
+                            <img src="pic/4 setengah 12 org.png" height="100%" width="100%" style="padding-left:30px;">
                         </div>
                     </div>
-                    <div class="myprofile_right">
+                    <div class="myprofile_right_child">
                         <div class="Name">
                             <div class="Name_text">
                                 Name
@@ -216,7 +245,9 @@
                     </div>
                 </div>
                 <div class="addchildren">
-                    <button>image+</button>
+                    <button>
+                        <img src="pic/plus bulat.png">
+                    </button>
                 </div>
             </div>
             <div class="myfav">
