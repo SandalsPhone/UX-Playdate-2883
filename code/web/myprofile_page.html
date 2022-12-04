@@ -63,19 +63,21 @@
                 </td>
             </tr>
         </table>
-        <label class="underline_long"> ___________________________ </label>
-        <label class="underline_long2"> ___________________________ </label>
-        <label class="underline_long3"> ___________________________ </label>
-        <label class="underline_long4"> ___________________________ </label>
-        <label class="underline_long5"> ___________________________ </label>
-        <label class="underline_long6"> ___________________________ </label>
+        <!---
+        <label class="underline_long" id="underlines"> ___________________________ </label>
+        <label class="underline_long2" id="underlines"> ___________________________ </label>
+        <label class="underline_long3" id="underlines"> ___________________________ </label>
+        <label class="underline_long4" id="underlines"> ___________________________ </label>
+        <label class="underline_long5" id="underlines"> ___________________________ </label>
+        <label class="underline_long6" id="underlines"> ___________________________ </label>
+        -->
         <div class="main">
             <div class="produk">
                 <div>
                     <button class="buttonprofile">My Profile</button><!--bisa jadiin href / button terserah-->
                 </div>
                 <div>
-                    <button class="buttonmyfavorite">My favorite</button>
+                    <button class="buttonmyfavorite">My Favorite</button>
                 </div>
                 <div>
                     <button>Friends List (6)</button><!--jadiin dropdownlist-->
@@ -87,13 +89,13 @@
                     <button>Friends Request (8)</button>
                 </div>
                 <div>
-                    <button>Transaction History</button>
+                    <button onclick="showTransactionHistory()">Transaction History</button>
                 </div>
                 <div>
                     <a href="" class="sign_out_produk">Sign out</a>
                 </div>
             </div>
-            <div class="profile">
+            <div class="profile" id="profile_section">
                 <div class="profile_title">
                     <div class="My_Profile_Picture_text">
                         My Profile Picture
@@ -162,12 +164,14 @@
                         </div>
                     </div>
                 </div>
-        <label class="underline_long7"> ___________________________ </label>
-        <label class="underline_long8"> ___________________________ </label>
-        <label class="underline_long9"> ___________________________ </label>
-        <label class="underline_long10"> ___________________________ </label>
-        <label class="underline_long11"> ___________________________ </label>
-        <label class="underline_long12"> ___________________________ </label>
+
+        <label class="underline_long7" id="underlines"> ___________________________ </label>
+        <label class="underline_long8" id="underlines"> ___________________________ </label>
+        <label class="underline_long9" id="underlines"> ___________________________ </label>
+        <label class="underline_long10" id="underlines"> ___________________________ </label>
+        <label class="underline_long11" id="underlines"> ___________________________ </label>
+        <label class="underline_long12" id="underlines"> ___________________________ </label>
+
         <div class="profile_title">
             <div class="children_Picture_text">
                 Children Picture
@@ -264,15 +268,87 @@
                     xxx
                 </div>
             </div>
-            <div class="friends_list"><!--tambahin container yg udah dibuat-->
 
+            <div class="friends_list"><!--tambahin container yg udah dibuat-->
+                <div class="searchbox_friends_list">
+                <input type="text" placeholder="SEARCH">
+                <button> <img src="pic/search-md.png" width="80%" height="80%"> </button>
+                </div>
+                <div class="friend_one">
+                    <img src="pic/3faces.png" height="50px">
+                    <label class="friend_list_top"> Angel, Mira, Nicole </label>
+                    <label class="friend_list_below"> Natasha Witi </label>
+                </div>
+                <img src="pic/chat_icon.png" class="chat_icon_in_friend_list">
+                <div class="friend_two">
+                    <img src="pic/3faces.png" height="50px">
+                    <label class="friend_list_top"> Laura, Leis, Axel </label>
+                    <label class="friend_list_below"> Yolanda </label>
+                </div>
+                <img src="pic/chat_icon.png" class="chat_icon_in_friend_list">
+                <div class="friend_three">
+                    <img src="pic/3faces.png" height="50px">
+                    <label class="friend_list_top"> Andrew, Daniel , Siti </label>
+                    <label class="friend_list_below"> Verstappen </label>
+                </div>
+                <img src="pic/chat_icon.png" class="chat_icon_in_friend_list">
+                <div class="friend_four">
+                    <img src="pic/3faces.png" height="50px">
+                    <label class="friend_list_top"> Valerie, Watson, Brim </label>
+                    <label class="friend_list_below"> Marcus </label>
+                </div>
+                <img src="pic/chat_icon.png" class="chat_icon_in_friend_list">
+                <div class="friend_five">
+                    <img src="pic/3faces.png" height="50px">
+                    <label class="friend_list_top"> Tira, Michael, Max </label>
+                    <label class="friend_list_below"> Agnes </label>
+                </div>
+                <img src="pic/chat_icon.png" class="chat_icon_in_friend_list">
+                <div class="friend_six">
+                    <img src="pic/3faces.png" height="50px">
+                    <label class="friend_list_top"> Laura, Siri, Aileen </label>
+                    <label class="friend_list_below"> Vanessa </label>
+                </div>
+                <img src="pic/chat_icon.png" class="chat_icon_in_friend_list">
             </div>
+
             <div class="frienda_req"><!--tambahin container yg udah dibuat-->
 
             </div>
+
             <div class="transaction_history"><!--nyambung ama database-->
 
             </div>
+
+            <div class="trans_history_section" id="trans_history">
+                <div class="history_one">
+                    <img src="pic/Screenshot (389) 1.png">
+                    <label class="hist_one_name_of_service"> Tamasya </label>
+                    <label class="hist_one_day"> Wednesday </label>
+                    <br>
+                    <label class="hist_one_session_and_time"> Session 1 | 10.00 - 11.00 </label>
+                    <br>
+                    <label class="hist_one_place"> Central Park </label>
+                    <label class="hist_one_status"> Completed </label>
+                    <button class="hist_one_review"> Review </button>
+                    <br>
+                    <button class="hist_one_book_again"> Book Again </button>
+                </div>
+                <div class="history_two">
+                    <img src="pic/Screenshot (389) 1.png">
+                    <label class="hist_two_name_of_service"> Tamasya </label>
+                    <label class="hist_two_day"> Wednesday </label>
+                    <br>
+                    <label class="hist_two_session_and_time"> Session 1 | 10.00 - 11.00 </label>
+                    <br>
+                    <label class="hist_two_place"> Central Park </label>
+                    <label class="hist_two_status"> Completed </label>
+                    <button class="hist_two_review"> Review </button>
+                    <br>
+                    <button class="hist_two_book_again"> Book Again </button>
+                </div>
+            </div>
+
         </div>
     </div>
     <footer class="footer">

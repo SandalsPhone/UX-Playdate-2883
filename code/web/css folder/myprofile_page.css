@@ -37,8 +37,8 @@ body{
     cursor: pointer;
     display: inline-block;
     position: absolute;
-    top: 47px;
-    right: 290px;
+    top: 45px;
+    right: 352px;
 }
 
 .chat_icon{
@@ -174,6 +174,7 @@ body{
 */
     width: 1000px;
     margin-left: 90px; 
+ /*   display: none;  */
 }
 
 .My_Profile_Picture_text{
@@ -440,6 +441,271 @@ body{
 
 
 
+
+.trans_history_section{
+    width: 1000px;
+    margin-left: 90px; 
+    display: none;   
+}
+
+.history_one{
+    height: 197px;
+    width: 850px;
+    border: 5px solid #735DE7;
+    border-radius: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.history_one img{
+    border-radius: 50px;
+    width: 212px;
+    height: 196px;
+    padding-right: 30px;
+}
+
+.hist_one_name_of_service{
+    font-family: Lato;
+    font-size: 46px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: -190px;
+    margin-left: 250px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.hist_one_day{
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: normal;
+    display: block;
+    margin-left: 255px;
+}
+
+.hist_one_session_and_time{
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: normal;
+    display: block;
+    margin-left: 255px;
+    margin-top: -10px;
+}
+
+.hist_one_place{
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: normal;
+    display: block;
+    margin-left: 255px;
+    margin-top: -10px;
+}
+
+.hist_one_status{
+    display: block;
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: bolder;
+    font-style: italic;
+    color: #735DE7;
+    margin-left: 670px;
+    margin-top: -150px;
+}
+
+.hist_one_review{
+    cursor: pointer;
+    padding: 10px 50px;
+    border: 2px solid #FED935;
+    background: none;
+    border-radius: 25px;
+    margin-left: 650px;
+    margin-top: 20px;
+    color: black;
+}
+
+.hist_one_review:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.hist_one_book_again{
+    cursor: pointer;
+    padding: 10px 37px;
+    border: 2px solid #FED935;
+    background: none;
+    border-radius: 25px;
+    margin-left: 650px;
+    margin-top: 20px;
+    color: black;
+}
+
+.hist_one_book_again:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.history_two{
+    height: 197px;
+    width: 850px;
+    border: 5px solid #735DE7;
+    border-radius: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: 30px;
+}
+
+.history_two img{
+    border-radius: 50px;
+    width: 212px;
+    height: 196px;
+    padding-right: 30px;
+}
+
+.hist_two_name_of_service{
+    font-family: Lato;
+    font-size: 46px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: -190px;
+    margin-left: 250px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.hist_two_day{
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: normal;
+    display: block;
+    margin-left: 255px;
+}
+
+.hist_two_session_and_time{
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: normal;
+    display: block;
+    margin-left: 255px;
+    margin-top: -10px;
+}
+
+.hist_two_place{
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: normal;
+    display: block;
+    margin-left: 255px;
+    margin-top: -10px;
+}
+
+.hist_two_status{
+    display: block;
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: bolder;
+    font-style: italic;
+    color: #735DE7;
+    margin-left: 670px;
+    margin-top: -150px;
+}
+
+.hist_two_review{
+    cursor: pointer;
+    padding: 10px 50px;
+    border: 2px solid #FED935;
+    background: none;
+    border-radius: 25px;
+    margin-left: 650px;
+    margin-top: 20px;
+    color: black;
+}
+
+.hist_two_review:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.hist_two_book_again{
+    cursor: pointer;
+    padding: 10px 37px;
+    border: 2px solid #FED935;
+    background: none;
+    border-radius: 25px;
+    margin-left: 650px;
+    margin-top: 20px;
+    color: black;
+}
+
+.hist_two_book_again:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+
+
+.friends_list{
+    width: 1000px;
+    margin-left: 90px; 
+    display: none;
+}
+
+.friends_list input{
+    height: 30px;
+    width: 700px;
+    padding: 5px 60px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.friends_list button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    right: 815px;
+}
+
+.friend_one, .friend_two, .friend_three, .friend_four, .friend_five, .friend_six{
+    width: 825px;
+    height: 60px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+    background-color: #d4d4d4;
+}
+
+.friend_one img, .friend_two img, .friend_three img, .friend_four img, .friend_five img, .friend_six img{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.friend_list_top{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Lato;
+    margin-top: -55px;
+    margin-left: 115px;
+    display: block;
+}
+
+.friend_list_below{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    display: block;
+    margin-left: 115px;
+}
+
+.chat_icon_in_friend_list{
+    position: relative;
+    top: -45px;
+    left: 750px;
+}
+
+.searchbox_friends_list{
+    padding-bottom: 30px;
+}
+
+
+
+
+
 .footer{
     background-color: #2ACCEE;
     font-family:  Inter;
@@ -448,6 +714,13 @@ body{
     margin-left: -10px;
     width: 101.2%;
 }
+
+
+
+
+
+
+
 
 .footerdiv{
     padding-top: 55px;

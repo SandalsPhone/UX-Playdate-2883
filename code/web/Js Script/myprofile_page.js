@@ -7,3 +7,8 @@ function showingDiv(){
       x.style.display = "none";
     }
 }
+
+//buat hilangin bagian profile dan munculin bagian transaction history
+function showTransactionHistory(){
+
+}
