@@ -3,6 +3,12 @@ body{
 
 }
 
+.error{
+    text-align: center;
+    color: red;
+    padding-top: 20px;
+}
+
 .sign_in_page_background_blur{
     width: 1540px;
     height: 730px;

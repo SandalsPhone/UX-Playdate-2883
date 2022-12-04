@@ -21,7 +21,12 @@ $phone_number = $_POST['phone_number'];
 
 //check if both password and password_retype are the same
 if($password != $password_retype){
-
+    header('Location: sign_up_page.html');
+    exit();
+}
+else if($phone_number < 7 || $phone_number > 13) {
+    header('Location: sign_up_page.html');
+    exit();
 }
 //validate phone number
 //on hold, current database is wrong

@@ -16,33 +16,33 @@
             <label class="sign_in_welcome"> Welcome </label>
             
             <div class="sign_in_section">
-                <form action = 'sign_up_submit.php' method = 'post'>
+                <form action = 'sign_up_submit.php' method = "post">
                 <div class="sign_in_section_content">
                     <label class="sign_in_header"> CREATE ACCOUNT </label>
                     <div class="name_section">
-                        <input type="text" id = "first_name" placeholder="First name" class="type_first_name"> 
-                        <input type="text" id = "last_name" placeholder="Last name" class="type_last_name"> 
+                        <input type="text" name = "first_name" id = "first_name" placeholder="First name" class="type_first_name"> 
+                        <input type="text" name = "last_name" id = "last_name" placeholder="Last name" class="type_last_name"> 
                     </div>
                     <div class="birth_and_gender_section">
 
                             <label class="date_of_birth_label"> Date of Birth </label>
                             <label class="gender_label"> Gender </label>
                             <br>
-                            <input type="date" id="birth_date">
+                            <input type="date" name  = "birth_date" id="birth_date">
                             <input type="radio" id="male" name="gender" value="Male">
                             <label for="make">Male</label>
                             <input type="radio" id="female" name="gender" value="Female"> 
                             <label for="female">Female</label>
 
                     </div>
-                        <input type="text" id="email" placeholder="E-mail" class="type_email">
+                        <input type="text" name = "email" id="email" placeholder="E-mail" class="type_email">
                         <br>
-                        <input type="text" id="address" placeholder="Address" class="type_address">
+                        <input type="text" name ="address" id="address" placeholder="Address" class="type_address">
                         <br>
-                        <input type="text" id="password" placeholder="Password" class="type_password">
+                        <input type="text" name = "password" id="password" placeholder="Password" class="type_password">
                         <div class="password_checker"> Strong Password </div>
                         <br>
-                        <input type="text" id="password_retype" placeholder="Re-Type Password" class="type_retype_password">
+                        <input type="text" name = "password" id="password_retype" placeholder="Re-Type Password" class="type_retype_password">
                         <div class="password_checker_two"> Strong Password </div>
 
                         <label class="phone_number"> Phone Number </label>
@@ -50,17 +50,18 @@
                             <div class="first_two_number">
                                     <label> +62 </label>
                             </div>
-                            <input type="number" id="phone_number" placeholder="" class="type_phone_number">
+                            <input type="number" name="phone_number" id="phone_number" placeholder="" class="type_phone_number">
                             <img src="pic/indoflag.png" class="indo_flag">
                         </div>
                         
-                        <input class="signup_button" type = "submit" value = "SIGN UP">
+                        <input class="signup_button" type = "submit" name ="Submit" id="Submit" value = "SIGN UP">
                         <label class="have_acc"> Have Account? </label>
                         <a href="login_page.html"><label class="login_bottom_label"> login </label></a>
                         
                 </div>
             </div>
             </form>
+            <p class ="error" id="input_error"></p>
         </div>
         <img src="pic/bg_loginpage.png" class="sign_in_page_background_blur" width="1440px" height="760px">
     </div>
