@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Dec 03, 2022 at 03:32 PM
+-- Generation Time: Dec 04, 2022 at 04:12 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -30,6 +30,8 @@ USE `akun`;
 --
 
 CREATE TABLE `akun` (
+  `first_name_akun` varchar(50) NOT NULL,
+  `last_name_akun` varchar(50) NOT NULL,
   `username_akun` varchar(50) NOT NULL,
   `email_akun` varchar(50) NOT NULL,
   `address_akun` varchar(100) NOT NULL,
@@ -357,7 +359,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-12-03 15:32:04', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-12-04 04:05:21', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
