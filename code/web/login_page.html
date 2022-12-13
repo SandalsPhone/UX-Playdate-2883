@@ -20,23 +20,23 @@
             <div class="login_section">
 
                 <div class="login_section_content">
+                    <form action = 'login.php' method = "post">
                     <label class="login_header"> LOGIN </label>
                     <br>
                     <label class="username_label"> Username </label>
                     <br>
                     <img src="pic/user_account_icon.png" class="mini_icon">
-                    <input type="text" placeholder="Type your username" class="type_username_section"> 
+                    <input type="text" name = "email" id = "email" placeholder="Type your email address" class="type_username_section"> 
                     <label class="password_label"> Password </label>
                     <br>
                     <img src="pic/pw_key_icon.png" class="mini_icon">
-                    <input type="text" placeholder="Type your password" class="type_password_section"> 
+                    <input type="text" name = "password" id = "email" placeholder="Type your password" class="type_password_section"> 
                     <br>
                     <label class="forgot_password"> Forgot Password? </label>
                     <div class="div_login_button">
-                        <button class="login_page_login_button">
-                            LOGIN
-                        </button>
+                        <input class="login_page_login_button" type = "submit" name ="Submit" id="Submit" value = "LOGIN">
                     </div>
+                    </form>
                     <br style="line-height: 10px;">
                     <label class="signup_using"> Or Sign Up Using </label>
                     <br>
