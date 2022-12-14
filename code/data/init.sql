@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Dec 04, 2022 at 01:46 PM
+-- Generation Time: Dec 14, 2022 at 11:01 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -36,16 +36,16 @@ CREATE TABLE `akun` (
   `address_akun` varchar(100) NOT NULL,
   `no_hp_akun` varchar(20) NOT NULL,
   `password_akun` varchar(100) NOT NULL,
-  `gender_akun` varchar(20) NOT NULL
+  `gender_akun` varchar(20) NOT NULL,
+  `birth_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `akun`
 --
 
-INSERT INTO `akun` (`first_name_akun`, `last_name_akun`, `email_akun`, `address_akun`, `no_hp_akun`, `password_akun`, `gender_akun`) VALUES
-('Contoh', 'Example', 'aes101@gmail.com', 'chicago', '81222222222', 'aaaaa', 'Male'),
-('Contoh', 'Example', 'aes11@gmail.com', 'chicago', '81222222222', 'aaaaa', 'Male');
+INSERT INTO `akun` (`first_name_akun`, `last_name_akun`, `email_akun`, `address_akun`, `no_hp_akun`, `password_akun`, `gender_akun`, `birth_date`) VALUES
+('Jason', 'Jevando', 'ae101@gmail.com', 'mc 17 no 2', '81344545343', 'aaaaa', 'Male', '2019-06-03');
 --
 -- Database: `book_a_playdate`
 --
@@ -75,7 +75,7 @@ CREATE TABLE `book_a_playdate` (
 --
 
 INSERT INTO `book_a_playdate` (`gambar_book_a_playdate`, `tempat_book_playdate`, `available_date_book_playdate_1`, `available_date_book_playdate_2`, `available_date_book_playdate_3`, `area_book_playdate`, `address_book_playdate_1`, `address_book_playdate_2`, `address_book_playdate_3`) VALUES
-('pic/image 18.png', 'CENTRAL PARK', '2022-11-23', '2022-11-25', '2022-11-27', 'Park, Lantai 1', 'Letjen S. Parman St No.kav.28, South Tanjung Duren,', 'Grogol petamburan, West Jakarta City', ''),
+('pic/image 18.png', 'test', '2022-11-23', '2022-11-25', '2022-11-27', 'Park, Lantai 1', 'Letjen S. Parman St No.kav.28, South Tanjung Duren,', 'Grogol petamburan, West Jakarta City', ''),
 ('pic/image 17.png', 'LIVING WORLD', '2022-11-24', '2022-11-26', '2022-11-28', 'Playground, Lantai 1', 'Jalan Alam Sutera Boulevard Kav.21 15325', 'Tangerang Selatan Banten', ''),
 ('pic/image 49.png', 'EMPORIUM MALL', '2022-11-23', '2022-11-25', '2022-11-27', 'FoodHall, Lantai 4', 'Jl. Pluit Selatan Raya, Jakarta, Indonesia', '', ''),
 ('pic/image 50.png', 'PLUIT VILLAGE', '2022-11-24', '2022-11-26', '2022-11-28', 'Playground, Lantai 2', 'Jalan Pluit Selatan Raya 14440 Penjaringan', 'Jakarta', '');
@@ -111,7 +111,7 @@ CREATE TABLE `learning_kit` (
 --
 
 INSERT INTO `learning_kit` (`gambar_learning_kit`, `gambar_learning_kit_2`, `nama_learning_kit`, `rating_learning_kit`, `usia_min_learning_kit`, `usia_max_learning_kit`, `difficulty_learning_kit`, `harga_learning_kit`, `session_learning_kit`, `max_attendance_learning_kit`, `min_attendance_learning_kit`, `jumlah_book_learning_kit`) VALUES
-('pic/Rectangle 18(1).png', '', 'Day and Night', 0, 6, 7, 2, '0', 0, 0, 0, 0),
+('pic/Rectangle 18(1).png', '', 'Day', 0, 6, 7, 2, '0', 0, 0, 0, 0),
 ('pic/image 24.png', '', 'My Body', 0, 7, 8, 1, '0', 0, 0, 0, 0),
 ('pic/Group 232.png', '', 'Pekerjaan', 0, 5, 6, 3, '0', 0, 0, 0, 0),
 ('pic/Screenshot (389) 1.png', '', 'Tamasya', 0, 4, 5, 4, '0', 0, 0, 0, 0),
@@ -271,7 +271,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"akun\",\"table\":\"akun\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
+('root', '[{\"db\":\"akun\",\"table\":\"akun\"},{\"db\":\"book_a_playdate\",\"table\":\"book_a_playdate\"},{\"db\":\"learning_kit\",\"table\":\"learning_kit\"},{\"db\":\"service_page\",\"table\":\"service_page\"},{\"db\":\"service\",\"table\":\"service\"},{\"db\":\"review\",\"table\":\"review\"},{\"db\":\"product_page\",\"table\":\"product_page\"},{\"db\":\"product\",\"table\":\"product\"},{\"db\":\"uph\",\"table\":\"tableuph\"}]');
 
 -- --------------------------------------------------------
 
@@ -378,7 +378,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2022-12-04 13:46:06', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2022-12-14 11:01:48', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
