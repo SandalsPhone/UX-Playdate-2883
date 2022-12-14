@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,16 @@
     <link rel="stylesheet" href="css folder/landing_page.css">
 </head>
 <body>
+    <?php
+        if(isset($_SESSION['is_login'])){
+            $first_row_profile = '<a href="myprofile_page.php" class="sign_in_login_div_signin">'. $_SESSION["first_name"] .'</a>';
+            $second_row_profile = '<a href="logout.php" class="sign_in_login_div_logout"> Logout</a>';
+        }
+        else{  
+            $first_row_profile = '<a href="sign_up_page.html" class="sign_in_login_div_signin"> Sign Up </a>';
+            $second_row_profile = '<a href="login_page.html" class="sign_in_login_div_login"> Login </a>';
+        }
+    ?>
     <div class="nav">
         <table>
             <tr class="tablerow">
@@ -16,7 +29,7 @@
                 <td> SCHEDULE </td>
                 <td> LEARNING KIT </td>
                 <td> FIND A FRIEND </td>
-                <td><a href="product_page.html"> BOOK A PLAYDATE </a></td>
+                <td><a href="product_page.php"> BOOK A PLAYDATE </a></td>
                 <td></td>
                 <td>
                     <div class="search_box">
@@ -47,11 +60,9 @@
     </div>
 
     <div class="sign_in_login_div" id="btn">
-        <a href="sign_up_page.html" class="sign_in_login_div_signin"> Sign Up </a>
+        <?= $first_row_profile?>
         <br>
-        <a href="login_page.html" class="sign_in_login_div_login"> Login </a>
-        <br>
-        <a href="" class="sign_in_login_div_logout"> Logout</a>
+        <?= $second_row_profile?>
     </div>
 
     <div class="container">

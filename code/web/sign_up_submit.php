@@ -28,7 +28,6 @@ while($row = mysqli_fetch_array($qr)){
 }
 
 $email_array_size = count($email_array);
-
 //calculate phone number int length, used https://stackoverflow.com/questions/28433798/php-get-length-of-digits-in-a-number as ref
 if($phone_number !== 0){
     $phone_number_length = strlen((string)$phone_number);
@@ -46,8 +45,9 @@ if(empty($first_name)
     || empty($password)
     || empty($password_retype)
     || empty($phone_number)
+    || $birth_date == ''
 ){
-    header('Location: sign_up_page.html');
+    header('Location: myprofile_page.html');
     exit();
 }
 //check if name is valid
@@ -72,16 +72,17 @@ else if(!(filter_var($email, FILTER_VALIDATE_EMAIL))){
 }
 else{
     //check if email is already in database
-    for($i = 0; $i<$email_array_size; $i++){
-        if ($email_array[$i] == $email){
+    for($i = 0; $i < count($email_array); $i++){
+        if((strcmp($email, $email_array[$i])) == 0){
             header('Location: sign_up_page.html');
             exit();
         }
     }
+    
     //insert details into db
     //WARNING: THIS HAS NO SECURITY AT ALL, 100% VUNERABLE TO SQL INJECTION
-    $query = "INSERT INTO `akun` (`first_name_akun`, `last_name_akun`, `email_akun`, `address_akun`, `no_hp_akun`, `password_akun`, `gender_akun`) VALUES ('$first_name' ,'$last_name', '$email', '$address', '$phone_number', '$password', '$gender')";
+    $query = "INSERT INTO `akun` (`first_name_akun`, `last_name_akun`, `email_akun`, `address_akun`, `no_hp_akun`, `password_akun`, `gender_akun`, `birth_date`) VALUES ('$first_name' ,'$last_name', '$email', '$address', '$phone_number', '$password', '$gender', '$birth_date')";
     $qr = mysqli_query($conn, $query);
-    header('Location: myprofile_page.html');
+    header('Location: landing_page.php');
     exit();
 }
