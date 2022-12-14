@@ -47,7 +47,7 @@ if(empty($first_name)
     || empty($phone_number)
     || $birth_date == ''
 ){
-    header('Location: myprofile_page.html');
+    header('Location: signup_page.html');
     exit();
 }
 //check if name is valid
